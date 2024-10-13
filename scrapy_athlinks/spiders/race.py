@@ -31,13 +31,13 @@ class RaceSpider(Spider):
         )
 
     def parse_metadata(self, response):
-        jsonresponse = json.loads(response.text)
+        json_response = json.loads(response.text)
 
         # This attribute must be present on the RaceSpider instance for
         # it to construct urls for individual athlete result pages.
-        self.event_course_id = jsonresponse['eventCourseMetadata'][0]['eventCourseId']
+        self.event_course_id = json_response['eventCourseMetadata'][0]['eventCourseId']
 
-        yield json_to_race_item(jsonresponse)
+        yield json_to_race_item(json_response)
 
         yield create_race_page_request(self, first_result_num=0)
 
@@ -69,12 +69,12 @@ class RaceSpider(Spider):
     def parse_athlete(response):
         """
         Ref:
-      https://stackoverflow.com/questions/42610814/scrapy-yield-items-as-sub-items-in-json
+        https://stackoverflow.com/questions/42610814/scrapy-yield-items-as-sub-items-in-json
         """
-        jsonresponse = json.loads(response.text)
+        json_response = json.loads(response.text)
 
         yield AthleteItem(
-            name=jsonresponse['displayName'],
+            name=json_response['displayName'],
             split_data=[
                 AthleteSplitItem(
                     name=split['intervalName'],
@@ -83,7 +83,7 @@ class RaceSpider(Spider):
                     distance_m=split['pace']['distance']['distanceInMeters'],
                     time_with_penalties_ms=split['timeWithPenalties']['timeInMillis'],
                 )
-                for split in jsonresponse['intervals']
+                for split in json_response['intervals']
             ]
         )
 
