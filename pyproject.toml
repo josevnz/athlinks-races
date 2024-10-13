@@ -35,10 +35,7 @@ classifiers = [
     'Programming Language :: Python :: 3',
 ]
 dependencies = [
-    "Scrapy==2.6.2",
-    "pyopenssl==22.0.0",
-    "cryptography==38.0.4",
-    "Twisted==22.10.0"
+    "Scrapy==2.11"
 ]
 license = {file = "LICENSE"}
 [project.scripts]
