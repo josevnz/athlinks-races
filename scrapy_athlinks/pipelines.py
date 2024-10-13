@@ -17,55 +17,55 @@ from itemadapter import ItemAdapter
 
 from scrapy_athlinks import items
 
-
 DEFAULT_DATA_FNAME = 'race.json'
 
 
 class SingleJsonWriterPipeline:
-  """Write all the race data as a single json object.
+    """
+    Write all the race data as a single json object.
 
-  The main functional difference from typical pipelines is that the
-  items are stored in memory, then written to file all at once in
-  the last step.
+    The main functional difference from typical pipelines is that the
+    items are stored in memory, then written to file all at once in
+    the last step.
 
-  Not great for memory usage generally, but let's see if it can handle 
-  some relatively small race result data.
+    Not great for memory usage generally, but let's see if it can handle
+    some relatively small race result data.
 
-  Ref:
-  https://stackoverflow.com/questions/49635722/json-export-formating-in-scrapy
+    Ref:
+    https://stackoverflow.com/questions/49635722/json-export-formating-in-scrapy
 
-  NOTE: This could probably all be avoided by yielding a single RaceItem
-  from the spider, then slightly modifying the JsonItemExporter, passing
-  straight through `start_exporting` and just having `stop_exporting`
-  call `self._beautify_newline()`.
-  https://stackoverflow.com/questions/33290876/how-to-create-custom-scrapy-item-exporter
-  https://docs.scrapy.org/en/latest/_modules/scrapy/exporters.html#JsonItemExporter
-  """
-  file = None
+    NOTE: This could probably all be avoided by yielding a single RaceItem
+    from the spider, then slightly modifying the JsonItemExporter, passing
+    straight through `start_exporting` and just having `stop_exporting`
+    call `self._beautify_newline()`.
+    https://stackoverflow.com/questions/33290876/how-to-create-custom-scrapy-item-exporter
+    https://docs.scrapy.org/en/latest/_modules/scrapy/exporters.html#JsonItemExporter
+    """
+    file = None
 
-  def __init__(self, path_out=DEFAULT_DATA_FNAME):
-    self.path_out = path_out
+    def __init__(self, path_out=DEFAULT_DATA_FNAME):
+        self.path_out = path_out
 
-  @classmethod
-  def from_crawler(cls, crawler):
-    return cls(
-      path_out=crawler.settings.get('PATH_OUT', DEFAULT_DATA_FNAME)
-    )
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            path_out=crawler.settings.get('PATH_OUT', DEFAULT_DATA_FNAME)
+        )
 
-  def open_spider(self, spider):
-    self.items = {'athletes': []}
+    def open_spider(self, spider):
+        self.items = {'athletes': []}
 
-  def close_spider(self, spider):
-    self.file = open(self.path_out, 'w')
-    self.file.write(json.dumps(
-      self.items,
-      indent=2
-    ))
-    self.file.close()
+    def close_spider(self, spider):
+        self.file = open(self.path_out, 'w')
+        self.file.write(json.dumps(
+            self.items,
+            indent=2
+        ))
+        self.file.close()
 
-  def process_item(self, item, spider):
-    if isinstance(item, items.AthleteItem):
-      self.items['athletes'].append(ItemAdapter(item).asdict())
-    elif isinstance(item, items.RaceItem):
-      self.items.update(ItemAdapter(item).asdict())
-    return item
+    def process_item(self, item, spider):
+        if isinstance(item, items.AthleteItem):
+            self.items['athletes'].append(ItemAdapter(item).asdict())
+        elif isinstance(item, items.RaceItem):
+            self.items.update(ItemAdapter(item).asdict())
+        return item

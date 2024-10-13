@@ -45,11 +45,11 @@ class RaceSpider(Spider):
         # Check if we have reached the end of results pages
         if response.text == '':
             return
-        jsonresponse = json.loads(response.text)
-        if len(jsonresponse) == 0:  # []
+        json_response = json.loads(response.text)
+        if len(json_response) == 0:  # []
             return
 
-        athletes_data = jsonresponse[0]['interval']['intervalResults']
+        athletes_data = json_response[0]['interval']['intervalResults']
 
         # Parse each athlete's results page and return an athlete item.
         for athlete_data in athletes_data:
@@ -65,11 +65,12 @@ class RaceSpider(Spider):
         next_start_result = cur_start_result + MAX_RESULT_LIMIT
         yield create_race_page_request(self, first_result_num=next_start_result)
 
-    def parse_athlete(self, response):
+    @staticmethod
+    def parse_athlete(response):
         """
-    Ref:
+        Ref:
       https://stackoverflow.com/questions/42610814/scrapy-yield-items-as-sub-items-in-json
-    """
+        """
         jsonresponse = json.loads(response.text)
 
         yield AthleteItem(
@@ -99,12 +100,12 @@ def extract_ids(race_url):
     return tuple(int(i) if isinstance(i, str) else i for i in s.groups())
 
 
-def json_to_race_item(jsonresponse):
+def json_to_race_item(json_response):
     return RaceItem(
-        name=jsonresponse['eventName'],
-        event_id=jsonresponse['eventId'],
-        event_course_id=jsonresponse['eventCourseMetadata'][0]['eventCourseId'],
-        distance_m=jsonresponse['eventCourseMetadata'][0]['distance'],
+        name=json_response['eventName'],
+        event_id=json_response['eventId'],
+        event_course_id=json_response['eventCourseMetadata'][0]['eventCourseId'],
+        distance_m=json_response['eventCourseMetadata'][0]['distance'],
         split_info=[
             {
                 'name': split['name'],
@@ -113,9 +114,9 @@ def json_to_race_item(jsonresponse):
                 # Leaving it here to remind me to investigate
                 # 'intervalType': split['intervalType']
             }
-            for split in jsonresponse['eventCourseMetadata'][0]['metadata']['intervals']
+            for split in json_response['eventCourseMetadata'][0]['metadata']['intervals']
         ],
-        date_utc_ms=jsonresponse['eventStartDateTime']['timeInMillis']  # is this typically done?
+        date_utc_ms=json_response['eventStartDateTime']['timeInMillis']  # is this typically done?
     )
 
 

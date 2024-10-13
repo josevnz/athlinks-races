@@ -206,7 +206,6 @@ class TestRaceSpider(unittest.TestCase):
         mock_response = create_mock_response('individual_response.json')
         mock_spider = mock.Mock(event_id=EVENT_ID, event_course_id=EVENT_COURSE_ID)
         result = race.RaceSpider.parse_athlete(
-            mock_spider,
             mock_response)
 
         # Expect method to yield one AthleteItem.
