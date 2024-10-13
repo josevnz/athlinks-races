@@ -14,14 +14,14 @@ def run():
         # Athlete data. Inside this file will be a list of dicts containing
         # data about each athlete's race and splits.
         'athletes.json': {
-          'format':'json',
+          'format': 'json',
           'overwrite': True,
           'item_classes': [AthleteItem],
         },
         # Race metadata. Inside this file will be a list with a single dict
         # containing info about the race itself.
         'metadata.json': {
-          'format':'json',
+          'format': 'json',
           'overwrite': True,
           'item_classes': [RaceItem],
         },
