@@ -1,8 +1,11 @@
+"""
+Unit tests for the scraper
+"""
 import json
-import os
 import re
 import types
 import unittest
+from pathlib import Path
 from unittest import mock
 from urllib.parse import urlparse, parse_qs
 
@@ -16,9 +19,12 @@ EVENT_ID = 1017004
 COURSE_ID = 2242309
 EVENT_COURSE_ID = 2248652
 
+DATA_DIR = Path(__file__).parent.parent / 'sample_data'
+
 
 def load_json_file(fname):
-    with open(os.path.join('../sample_data', fname), 'r') as f:
+    file_name = DATA_DIR / fname
+    with open(file_name, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
