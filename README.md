@@ -106,11 +106,13 @@ python install --editable .
 
 #### Example usage
 
-Run a `RaceSpider`:
+Run a `RaceSpider`, few races with different years:
 
-```sh
+```shell
 cd scrapy_athlinks
 scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O 1018673.json
+scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O 1093108.json
+scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O 1093108.json
 ```
 
 ## Dependencies
