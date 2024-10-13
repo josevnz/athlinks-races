@@ -6,7 +6,7 @@ from scrapy.crawler import CrawlerProcess
 from scrapy_athlinks import RaceSpider, AthleteItem, RaceItem
 
 
-def run():
+def main():
     # Make settings for two separate output files: one for athlete data,
     # one for race metadata.
     settings = {
@@ -35,4 +35,4 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    main()
