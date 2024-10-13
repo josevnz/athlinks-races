@@ -7,6 +7,7 @@ from scrapy import FormRequest, Request, Spider
 from scrapy_athlinks.items import AthleteItem, AthleteSplitItem, RaceItem
 
 MAX_RESULT_LIMIT = 100  # As high as Athlinks will accept
+EXTRACT_ID_REGEXP = re.compile(r'/event/([0-9]\d*)/results/Event/([0-9]\d*)(?:/Course/([0-9]\d*))?')
 
 
 class RaceSpider(Spider):
@@ -90,14 +91,13 @@ class RaceSpider(Spider):
 
 def extract_ids(race_url):
     err_potential = ValueError(f'Could not extract IDs from race url: {race_url}')
-    regexp = r'/event\/([0-9]\d*)\/results\/Event\/([0-9]\d*)(?:\/Course\/([0-9]\d*))?'
     try:
-        s = re.search(regexp, race_url)
+        matcher = EXTRACT_ID_REGEXP.search(race_url)
+        if matcher is None:
+            raise err_potential
+        return tuple(int(i) if isinstance(i, str) else i for i in matcher.groups())
     except TypeError:
         raise err_potential
-    if not bool(s):
-        raise err_potential
-    return tuple(int(i) if isinstance(i, str) else i for i in s.groups())
 
 
 def json_to_race_item(json_response):
