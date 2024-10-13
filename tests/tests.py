@@ -19,7 +19,7 @@ EVENT_COURSE_ID = 2248652
 
 
 def load_json_file(fname):
-  with open(os.path.join('sample_data', fname), 'r') as f:
+  with open(os.path.join('../sample_data', fname), 'r') as f:
     return json.load(f)
 
 

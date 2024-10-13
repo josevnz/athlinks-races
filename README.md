@@ -33,12 +33,14 @@ Scrapy can be operated entirely from python scripts.
 The package is available on [PyPi](https://pypi.org/project/scrapy-athlinks) and can be installed with `pip`:
 
 ```sh
+python -m venv `$HOME/virtualenv/scrapy-athlinks/`
+. $HOME/virtualenv/scrapy-athlinks/bin/activate
 pip install scrapy-athlinks
 ```
 
 #### Example usage
 
-[An demo script is included in this repo](demo.py).
+[An demo script is included in this repo](scrapy_athlinks/demo.py).
 
 ```python
 from scrapy.crawler import CrawlerProcess
@@ -50,7 +52,7 @@ settings = {
     # Athlete data. Inside this file will be a list of dicts containing
     # data about each athlete's race and splits.
     'athletes.json': {
-      'format':'json',
+      'format': 'json',
       'overwrite': True,
       'item_classes': [AthleteItem],
     },
@@ -70,6 +72,12 @@ process.crawl(RaceSpider, 'https://www.athlinks.com/event/33913/results/Event/10
 process.start()
 ```
 
+If you do a ```pip install --editable .``` then you can run as
+
+```shell
+scrappy_athlinks_demo
+```
+
 ### Option 2: Command line
 
 Alternatively, you may clone this repo for use like a typical Scrapy project
@@ -78,9 +86,11 @@ that you might create on your own.
 #### Installation
 
 ```sh
+python -m venv `$HOME/virtualenv/scrapy-athlinks/`
+. $HOME/virtualenv/scrapy-athlinks/bin/activate
 git clone https://github.com/aaron-schroeder/athlinks-scraper-scrapy
 cd athlinks-scraper-scrapy
-pip install -r requirements.txt
+python install --editable .
 ```
 
 #### Example usage
