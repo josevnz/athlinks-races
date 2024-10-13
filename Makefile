@@ -1,4 +1,5 @@
 .ONESHELL:
+SHELL = /usr/bin/bash
 init:
 	python -m venv ${HOME}/virtualenv/scrapy-athlinks
 	. ${HOME}/virtualenv/scrapy-athlinks/bin/activate
