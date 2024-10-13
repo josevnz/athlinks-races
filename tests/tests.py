@@ -85,9 +85,9 @@ class TestRaceSpider(unittest.TestCase):
             EVENT_ID, int(EVENT_ID),
             f'https://results.athlinks.com/event/{EVENT_ID}',
         ]:
-            with self.assertRaisesRegex(ValueError, 'Could not extract IDs') as cm:
+            self.assertIsNotNone(url)
+            with self.assertRaisesRegex(ValueError, 'Could not extract IDs'):
                 race.extract_ids(EVENT_ID)
-            # print(cm.exception)
 
     @unittest.skip('coming soon?')
     def test_process_inputs(self):
@@ -161,7 +161,7 @@ class TestRaceSpider(unittest.TestCase):
         )
         race_page_requests = select_by_criteria(
             sequence,
-            lambda o: isinstance(o, scrapy.Request) and bool(re.search(f'results.athlinks.com/event/[0-9]\d*', o.url))
+            lambda o: isinstance(o, scrapy.Request) and bool(re.search(f'results.athlinks.com/event/[0-9]\\d*', o.url))
         )
         self.assertEqual(len(athlete_requests), len(sequence) - 1)
         self.assertEqual(len(race_page_requests), 1)
