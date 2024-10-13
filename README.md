@@ -110,7 +110,7 @@ Run a `RaceSpider`:
 
 ```sh
 cd scrapy_athlinks
-scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O out.json
+scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O 1018673.json
 ```
 
 ## Dependencies
