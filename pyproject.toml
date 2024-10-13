@@ -1,7 +1,6 @@
 [build-system]
 requires = [
     "setuptools >= 70.1.0",
-    "build",
     "pip"
 
 ]
@@ -13,7 +12,8 @@ lint = [
 ]
 dev = [
     "twine",
-    "wheel"
+    "wheel",
+    "build",
 ]
 
 [project]

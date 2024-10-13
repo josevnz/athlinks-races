@@ -83,10 +83,16 @@ if __name__ == "__main__":
     main()
 ```
 
-If you do a ```pip install --editable .``` then you can run as
+If you do a ```pip install --editable .[lint,dev]``` then you can run as
 
 ```shell
 scrappy_athlinks_demo
+```
+
+Then you can build the wheelhouse to install locally if needed:
+
+```shell
+python -m build .
 ```
 
 ### Option 2: Command line
