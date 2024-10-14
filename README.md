@@ -1,7 +1,7 @@
 # scrapy-athlinks: web scraper for race results hosted on Athlinks
 
 [![License](https://img.shields.io/github/license/aaron-schroeder/athlinks-scraper-scrapy)](LICENSE)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-3810/)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-3810/)
 [![PyPI](https://img.shields.io/pypi/v/scrapy-athlinks.svg)](https://pypi.python.org/pypi/scrapy-athlinks/)
 
 <!--## Documentation
@@ -40,7 +40,7 @@ pip install scrapy-athlinks
 
 #### Example usage
 
-[An demo script is included in this repo](scrapy_athlinks/demo.py).
+[A demo script is included in this repo](scrapy_athlinks/demo.py).
 
 ```python
 """
