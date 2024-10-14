@@ -70,6 +70,8 @@ class SingleJsonWriterPipeline:
         Returns:
 
         """
+        if not spider:
+            raise ValueError("Missing spider argument")
         self.items = {'athletes': []}
 
     def close_spider(self, spider):
@@ -81,6 +83,8 @@ class SingleJsonWriterPipeline:
         Returns:
 
         """
+        if not spider:
+            raise ValueError("Missing spider argument")
         with open(self.path_out, 'w', encoding='utf-8') as json_file:
             json.dump(self.items, json_file, indent=2)
             json_file.flush()
@@ -95,6 +99,8 @@ class SingleJsonWriterPipeline:
         Returns:
 
         """
+        if not spider:
+            raise ValueError("Missing spider argument")
         if isinstance(item, items.AthleteItem):
             self.items['athletes'].append(ItemAdapter(item).asdict())
         elif isinstance(item, items.RaceItem):

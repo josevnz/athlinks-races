@@ -65,7 +65,7 @@ class RaceSpider(Spider):
 
         yield create_race_page_request(self, first_result_num=0)
 
-    def parse(self, response):
+    def parse(self, response, **kwargs) -> FormRequest:
         """
         Parse responses
         Args:
