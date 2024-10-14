@@ -144,7 +144,12 @@ class TestRaceSpider(unittest.TestCase):
             self.assertEqual(ids[1], EVENT_ID)
             self.assertIsNone(ids[2])
 
-        # Verify correct exceptions
+    def test_extract_bad_ids(self):
+        """
+        Verify correct exceptions
+        Returns:
+
+        """
         for url in [
             # NOTE: If more sophisticated input processing is implemented,
             # this should not raise an error. The event_id is actually all
@@ -285,7 +290,7 @@ class TestRaceSpider(unittest.TestCase):
 
     def test_parse_athlete(self):
         """
-        
+
         Returns:
 
         """

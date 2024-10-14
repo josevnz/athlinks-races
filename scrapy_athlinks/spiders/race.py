@@ -3,7 +3,7 @@ Crawling / Scraping logic.
 """
 import json
 import re
-from typing import Any, Dict
+from typing import Any, Dict, Iterator
 from urllib.parse import urlparse, parse_qs
 
 from scrapy import FormRequest, Request, Spider
@@ -65,7 +65,7 @@ class RaceSpider(Spider):
 
         yield create_race_page_request(self, first_result_num=0)
 
-    def parse(self, response, **kwargs) -> FormRequest:
+    def parse(self, response, **kwargs) -> Iterator[AthleteItem]:
         """
         Parse responses
         Args:
