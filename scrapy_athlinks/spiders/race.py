@@ -1,8 +1,10 @@
 import json
 import re
+from typing import Any, Dict
 from urllib.parse import urlparse, parse_qs
 
 from scrapy import FormRequest, Request, Spider
+from scrapy.http import Response
 
 from scrapy_athlinks.items import AthleteItem, AthleteSplitItem, RaceItem
 
@@ -15,12 +17,15 @@ class RaceSpider(Spider):
     allowed_domains = ['results.athlinks.com']
 
     def __init__(self, url=None, **kwargs):
+        """
+        Constructor
+        All we actually need to get going is the event_id.
+        url = process_inputs(url, event_id, event_course_id)
+        Args:
+            url:
+            **kwargs:
+        """
         super().__init__(url=url, **kwargs)
-
-        # TODO? More advanced input processing. All we actually need to
-        # get going is the event_id.
-        # url = process_inputs(url, event_id, event_course_id)
-
         # Not sure if 0 (master_event_id) or 2 (course_id) are ever needed.
         self.master_event_id, self.event_id, self.course_id = extract_ids(url)
         self.event_course_id = None
@@ -32,6 +37,18 @@ class RaceSpider(Spider):
         )
 
     def parse_metadata(self, response):
+        """
+        Parse race JSON metadata details. Some interesting attributes
+        - eventName
+        - eventId
+        - distance
+        - intervals (you can see the race split into pieces of interest)
+        Args:
+            response:
+
+        Returns:
+
+        """
         json_response = json.loads(response.text)
 
         # This attribute must be present on the RaceSpider instance for
@@ -67,7 +84,7 @@ class RaceSpider(Spider):
         yield create_race_page_request(self, first_result_num=next_start_result)
 
     @staticmethod
-    def parse_athlete(response):
+    def parse_athlete(response: Response) -> AthleteItem:
         """
         Ref:
         https://stackoverflow.com/questions/42610814/scrapy-yield-items-as-sub-items-in-json
@@ -89,7 +106,7 @@ class RaceSpider(Spider):
         )
 
 
-def extract_ids(race_url):
+def extract_ids(race_url: str) -> tuple[int | str | Any, ...]:
     err_potential = ValueError(f'Could not extract IDs from race url: {race_url}')
     try:
         matcher = EXTRACT_ID_REGEXP.search(race_url)
@@ -100,7 +117,7 @@ def extract_ids(race_url):
         raise err_potential
 
 
-def json_to_race_item(json_response):
+def json_to_race_item(json_response: Dict[str, Any]) -> RaceItem:
     return RaceItem(
         name=json_response['eventName'],
         event_id=json_response['eventId'],
@@ -120,11 +137,10 @@ def json_to_race_item(json_response):
     )
 
 
-def create_race_page_request(race_spider, first_result_num=0):
+def create_race_page_request(race_spider: RaceSpider, first_result_num: int = 0) -> FormRequest:
     """
-  
-  NOTE: I think this could go back inside the spider as an instance method too.
-  """
+    NOTE: I think this could go back inside the spider as an instance method too.
+    """
     # CYA
     first_result_str = str(first_result_num) if first_result_num is not None else '0'
 
@@ -142,7 +158,7 @@ def create_race_page_request(race_spider, first_result_num=0):
     )
 
 
-def create_athlete_request(race_spider, bib_num):
+def create_athlete_request(race_spider: RaceSpider, bib_num: int) -> FormRequest:
     return FormRequest(
         url=f'https://results.athlinks.com/individual',
         method='GET',

@@ -1,4 +1,5 @@
-"""Define item pipelines here
+"""
+Define item pipelines here
 
 Don't forget to add your pipeline to the ITEM_PIPELINES setting
 See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
@@ -10,7 +11,6 @@ Idea: cleaning and/or validation:
 https://doc.scrapy.org/en/latest/topics/item-pipeline.html#item-pipeline-example
 """
 import json
-import os
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
@@ -43,7 +43,8 @@ class SingleJsonWriterPipeline:
     """
     file = None
 
-    def __init__(self, path_out=DEFAULT_DATA_FNAME):
+    def __init__(self, path_out: str = DEFAULT_DATA_FNAME):
+        self.items = None
         self.path_out = path_out
 
     @classmethod
@@ -56,7 +57,7 @@ class SingleJsonWriterPipeline:
         self.items = {'athletes': []}
 
     def close_spider(self, spider):
-        self.file = open(self.path_out, 'w')
+        self.file = open(self.path_out, 'w', encoding='utf-8')
         self.file.write(json.dumps(
             self.items,
             indent=2
