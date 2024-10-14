@@ -1,3 +1,6 @@
+"""
+Crawling / Scraping logic.
+"""
 import json
 import re
 from typing import Any, Dict
@@ -13,6 +16,9 @@ EXTRACT_ID_REGEXP = re.compile(r'/event/([0-9]\d*)/results/Event/([0-9]\d*)(?:/C
 
 
 class RaceSpider(Spider):
+    """
+    Race results spider
+    """
     name = 'race'
     allowed_domains = ['results.athlinks.com']
 
@@ -60,6 +66,14 @@ class RaceSpider(Spider):
         yield create_race_page_request(self, first_result_num=0)
 
     def parse(self, response):
+        """
+        Parse responses
+        Args:
+            response:
+
+        Returns:
+
+        """
         # Check if we have reached the end of results pages
         if response.text == '':
             return
@@ -107,17 +121,33 @@ class RaceSpider(Spider):
 
 
 def extract_ids(race_url: str) -> tuple[int | str | Any, ...]:
+    """
+    Extract ids from url
+    Args:
+        race_url:
+
+    Returns:
+
+    """
     err_potential = ValueError(f'Could not extract IDs from race url: {race_url}')
     try:
         matcher = EXTRACT_ID_REGEXP.search(race_url)
         if matcher is None:
             raise err_potential
         return tuple(int(i) if isinstance(i, str) else i for i in matcher.groups())
-    except TypeError:
-        raise err_potential
+    except TypeError as exc:
+        raise err_potential from exc
 
 
 def json_to_race_item(json_response: Dict[str, Any]) -> RaceItem:
+    """
+    Convert JSON dict to RaceItem
+    Args:
+        json_response:
+
+    Returns:
+
+    """
     return RaceItem(
         name=json_response['eventName'],
         event_id=json_response['eventId'],
@@ -159,8 +189,17 @@ def create_race_page_request(race_spider: RaceSpider, first_result_num: int = 0)
 
 
 def create_athlete_request(race_spider: RaceSpider, bib_num: int) -> FormRequest:
+    """
+    Construct an Athlete request from the bib number
+    Args:
+        race_spider:
+        bib_num:
+
+    Returns:
+
+    """
     return FormRequest(
-        url=f'https://results.athlinks.com/individual',
+        url='https://results.athlinks.com/individual',
         method='GET',
         formdata={
             'bib': str(bib_num),

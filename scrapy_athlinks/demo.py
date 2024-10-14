@@ -7,6 +7,11 @@ from scrapy_athlinks import RaceSpider, AthleteItem, RaceItem
 
 
 def main():
+    """
+    CLI entry point
+    Returns:
+
+    """
     # Make settings for two separate output files: one for athlete data,
     # one for race metadata.
     settings = {

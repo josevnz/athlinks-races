@@ -49,22 +49,52 @@ class SingleJsonWriterPipeline:
 
     @classmethod
     def from_crawler(cls, crawler):
+        """
+        Return a class definition from the crawler object.
+        Args:
+            crawler:
+
+        Returns:
+
+        """
         return cls(
             path_out=crawler.settings.get('PATH_OUT', DEFAULT_DATA_FNAME)
         )
 
     def open_spider(self, spider):
+        """
+        Initialize spider pipeline
+        Args:
+            spider:
+
+        Returns:
+
+        """
         self.items = {'athletes': []}
 
     def close_spider(self, spider):
-        self.file = open(self.path_out, 'w', encoding='utf-8')
-        self.file.write(json.dumps(
-            self.items,
-            indent=2
-        ))
-        self.file.close()
+        """
+        Flush spider contents before exiting
+        Args:
+            spider:
+
+        Returns:
+
+        """
+        with open(self.path_out, 'w', encoding='utf-8') as json_file:
+            json.dump(self.items, json_file, indent=2)
+            json_file.flush()
 
     def process_item(self, item, spider):
+        """
+        Process an  item
+        Args:
+            item:
+            spider:
+
+        Returns:
+
+        """
         if isinstance(item, items.AthleteItem):
             self.items['athletes'].append(ItemAdapter(item).asdict())
         elif isinstance(item, items.RaceItem):
