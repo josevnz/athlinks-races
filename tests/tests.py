@@ -23,12 +23,28 @@ DATA_DIR = Path(__file__).parent.parent / 'sample_data'
 
 
 def load_json_file(fname):
+    """
+
+    Args:
+        fname:
+
+    Returns:
+
+    """
     file_name = DATA_DIR / fname
     with open(file_name, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
 def create_mock_response(fname):
+    """
+
+    Args:
+        fname:
+
+    Returns:
+
+    """
     jsonresponse = load_json_file(fname)
     return mock.Mock(
         text=json.dumps(jsonresponse)
@@ -36,16 +52,38 @@ def create_mock_response(fname):
 
 
 def test_dict_like(test_case, dict_like, expected_type_tups):
+    """
+
+    Args:
+        test_case:
+        dict_like:
+        expected_type_tups:
+
+    Returns:
+
+    """
     for key, expected_type in expected_type_tups:
         test_case.assertIn(key, dict_like)
         test_case.assertIsInstance(dict_like[key], expected_type)
 
 
 def select_by_criteria(my_list, criteria_func):
+    """
+
+    Args:
+        my_list:
+        criteria_func:
+
+    Returns:
+
+    """
     return [o for o in my_list if criteria_func(o)]
 
 
 class TestRaceSpider(unittest.TestCase):
+    """
+    Unit tests for the Race spider
+    """
 
     def _test_request_and_return_parsed_url(self, request, callback):
         """Helper func that validates a request and returns a parsed url"""
@@ -57,13 +95,36 @@ class TestRaceSpider(unittest.TestCase):
         return parse_result
 
     def assert_param_equals(self, query, key, val):
+        """
+
+        Args:
+            query:
+            key:
+            val:
+
+        Returns:
+
+        """
         self.assertEqual(query[key][0], str(val))
 
     def assert_from_is_zero(self, query):
+        """
+
+        Args:
+            query:
+
+        Returns:
+
+        """
         if 'from' in query:  # acceptable if not specified
             self.assert_param_equals(query, 'from', 0)
 
     def test_extract_ids(self):
+        """
+        Test id extraction
+        Returns:
+
+        """
         for url in [
             f'https://www.athlinks.com/event/{RACE_ID}/results/Event/{EVENT_ID}/Course/{COURSE_ID}',
             f'https://www.athlinks.com/event/{RACE_ID}/results/Event/{EVENT_ID}/Course/{COURSE_ID}/Results',
@@ -97,9 +158,19 @@ class TestRaceSpider(unittest.TestCase):
 
     @unittest.skip('coming soon?')
     def test_process_inputs(self):
+        """
+        TBD
+        Returns:
+
+        """
         raise NotImplementedError
 
     def test_parse_metadata(self):
+        """
+
+        Returns:
+
+        """
         mock_response = create_mock_response('race_meta_response.json')
         mock_spider = mock.Mock(event_id=EVENT_ID, event_course_id=None)
         result = race.RaceSpider.parse_metadata(
@@ -147,6 +218,11 @@ class TestRaceSpider(unittest.TestCase):
         self.assertEqual(mock_spider.event_course_id, EVENT_COURSE_ID)  # matches file
 
     def test_parse(self):
+        """
+        Test parser
+        Returns:
+
+        """
         mock_response = create_mock_response('race_response.json')
         mock_response.url = f'https://results.athlinks.com/event/{EVENT_ID}'  # ?from=10'
         mock_spider = mock.Mock(event_id=EVENT_ID, event_course_id=EVENT_COURSE_ID)
@@ -163,11 +239,11 @@ class TestRaceSpider(unittest.TestCase):
         sequence = list(result)
         athlete_requests = select_by_criteria(
             sequence,
-            lambda o: isinstance(o, scrapy.Request) and bool(re.search(f'results.athlinks.com/individual', o.url))
+            lambda o: isinstance(o, scrapy.Request) and bool(re.search('results.athlinks.com/individual', o.url))
         )
         race_page_requests = select_by_criteria(
             sequence,
-            lambda o: isinstance(o, scrapy.Request) and bool(re.search(f'results.athlinks.com/event/[0-9]\\d*', o.url))
+            lambda o: isinstance(o, scrapy.Request) and bool(re.search('results.athlinks.com/event/[0-9]\\d*', o.url))
         )
         self.assertEqual(len(athlete_requests), len(sequence) - 1)
         self.assertEqual(len(race_page_requests), 1)
@@ -176,7 +252,7 @@ class TestRaceSpider(unittest.TestCase):
         for request in athlete_requests:
             parse_result = self._test_request_and_return_parsed_url(request,
                                                                     mock_spider.parse_athlete)
-            self.assertEqual(parse_result.path, f'/individual')
+            self.assertEqual(parse_result.path, '/individual')
             query = parse_qs(parse_result.query)
             bibs.extend(query['bib'])
             self.assert_param_equals(query, 'eventId', EVENT_ID)
@@ -194,6 +270,11 @@ class TestRaceSpider(unittest.TestCase):
         self.assertGreater(int(query_race['from'][0]), 0)
 
     def test_parse_blank(self):
+        """
+        Test parse blank
+        Returns:
+
+        """
         for blank_text in ['', '[]']:
             result = race.RaceSpider.parse(
                 mock.Mock(),
@@ -203,8 +284,13 @@ class TestRaceSpider(unittest.TestCase):
             self.assertEqual(len(sequence), 0)
 
     def test_parse_athlete(self):
+        """
+        
+        Returns:
+
+        """
         mock_response = create_mock_response('individual_response.json')
-        mock_spider = mock.Mock(event_id=EVENT_ID, event_course_id=EVENT_COURSE_ID)
+        _ = mock.Mock(event_id=EVENT_ID, event_course_id=EVENT_COURSE_ID)
         result = race.RaceSpider.parse_athlete(
             mock_response)
 
