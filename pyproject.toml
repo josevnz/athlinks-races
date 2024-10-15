@@ -39,7 +39,7 @@ dependencies = [
 ]
 license = {file = "LICENSE"}
 [project.scripts]
-scrapy_athlinks_demo = "scrapy_athlinks.demo:main"
+scrapy_athlinks_cli = "scrapy_athlinks.cli:main"
 
 [tool.setuptools]
 include-package-data = true
