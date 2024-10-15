@@ -15,7 +15,13 @@ class AthleteItem(Item):
     that could be of future interest.
     """
     name = Field()  # str
-    # bib = Field  # int
+    bib = Field()
+    gender = Field()
+    country = Field()
+    locality = Field()
+    state = Field()
+    racer_has_finished = Field()
+    age = Field()
     split_data = Field()  # list(AthleteSplitItem)
 
 
@@ -31,12 +37,13 @@ class AthleteSplitItem(Item):
     * See `sample_data/individual_response.json` for other available data
       that could be of future interest.
     """
-    name = Field()  # str
-    time_ms = Field()  # int
-    # Optional fields(TODO: Make this so)
-    number = Field()  # int
-    time_with_penalties_ms = Field()  # int
-    distance_m = Field()  # int
+    name = Field()
+    time_ms = Field()
+    gun_time_ms = Field()
+    number = Field()
+    time_with_penalties_ms = Field()
+    distance_m = Field()
+    interval_full = Field()
 
 
 class RaceItem(Item):

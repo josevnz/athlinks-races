@@ -107,6 +107,13 @@ class RaceSpider(Spider):
 
         yield AthleteItem(
             name=json_response['displayName'],
+            bib=json_response['bib'],
+            age=json_response['age'],
+            country=json_response['country'],
+            locality=json_response['locality'],
+            gender=json_response['gender'],
+            state=json_response['region'],
+            racer_has_finished=json_response['racerHasFinished'],
             split_data=[
                 AthleteSplitItem(
                     name=split['intervalName'],
@@ -114,6 +121,8 @@ class RaceSpider(Spider):
                     time_ms=split['pace']['time']['timeInMillis'],
                     distance_m=split['pace']['distance']['distanceInMeters'],
                     time_with_penalties_ms=split['timeWithPenalties']['timeInMillis'],
+                    gun_time_ms=split['gunTime'],
+                    interval_full=split['intervalFull']
                 )
                 for split in json_response['intervals']
             ]
