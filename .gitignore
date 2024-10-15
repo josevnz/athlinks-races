@@ -8,6 +8,6 @@ data/
 leadville/
 horsetooth/
 .idea/**
-#athletes.json
-#metadata.json
+athletes.json
+metadata.json
 tests/_trial_temp/test.log
