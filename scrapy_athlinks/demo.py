@@ -38,7 +38,7 @@ def main():
         action="store",
         default="https://www.athlinks.com/event/33913/results/Event/1018673/",
         help="Override default race to crawl (Default: Crawl results for the 2022 Leadville Trail 100 Run)",
-        nargs="*"
+        nargs="?"
 
     )
     options = parser.parse_args()
