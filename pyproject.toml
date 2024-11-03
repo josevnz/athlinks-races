@@ -17,15 +17,15 @@ dev = [
 ]
 
 [project]
-name = "scrapy-athlinks"
-version = "0.0.2"
+name = "athlinks-races"
+version = "0.0.3"
 authors = [
-    {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
+    {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
 ]
 description = "Web scraper for race results hosted on Athlinks."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 keywords = ["running", "race", "empire state", "racing"]
 classifiers = [
     "Environment :: Console",
@@ -53,8 +53,8 @@ scrappy_athlinks = ["*.txt"]
 images = ["*.png", "*.svg"]
 
 [project.urls]
-Homepage = "https://trailzealot.com/blog/"
-Repository = "https://github.com/aaron-schroeder/athlinks-scraper-scrapy.git"
+Homepage = "http://kodegeek.com/"
+Repository = "https://github.com/josevnz/athlinks-races.git"
 
 # Pylint is quite verbose, keep overrides here
 # pylint --generate-toml-config
