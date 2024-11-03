@@ -1,21 +1,12 @@
 # scrapy-athlinks: web scraper for race results hosted on Athlinks
 
-[![License](https://img.shields.io/github/license/aaron-schroeder/athlinks-scraper-scrapy)](LICENSE)
-[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-3910/)
-[![PyPI](https://img.shields.io/pypi/v/scrapy-athlinks.svg)](https://pypi.python.org/pypi/scrapy-athlinks/)
 
 ## NOTE
 
-This fork contains bug-fixes not present in the original repository. May, may not be merged ever.
-
-For that reason I'm making it read-only.
+This is a fork of the original [athlinks-scraper-scrapy](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that were not originally available on the project.
 
 
 ## Introduction
-
-<!--## Documentation
-
-The official documentation is hosted on readthedocs.io: https://athlinks-scraper-scrapy.readthedocs.io/en/stable. -->
 
 
 `scrapy-athlinks` provides the [`RaceSpider`](scrapy_athlinks/spiders/race.py) class.
@@ -38,7 +29,7 @@ Scrapy can be operated entirely from python scripts.
 
 #### Installation
 
-The package is available on [PyPi](https://pypi.org/project/scrapy-athlinks) and can be installed with `pip`:
+The package is available on [PyPi](https://pypi.org/project/athlinks-races) and can be installed with `pip`:
 
 ```sh
 python -m venv `$HOME/virtualenv/scrapy-athlinks/`
@@ -141,15 +132,15 @@ make test
 
 ## License
 
-[![License](https://img.shields.io/github/license/aaron-schroeder/athlinks-scraper-scrapy)](LICENSE)
-
 This project is licensed under the MIT License. See
 [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-You can get in touch with me at the following places:
+You can get in touch here:
 
-- Website: [trailzealot.com](https://trailzealot.com)
-- LinkedIn: [linkedin.com/in/aarondschroeder](https://www.linkedin.com/in/aarondschroeder/)
+- GitHub: [https://github.com/josevnz](https://github.com/josevnz)
+
+### Original Author
+
 - GitHub: [github.com/aaron-schroeder](https://github.com/aaron-schroeder)
