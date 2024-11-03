@@ -2,6 +2,7 @@
 Demonstrate the available classes.
 You can run as python scrapy_athlinks/demo.py
 """
+# pylint: disable=duplicate-code
 from argparse import ArgumentParser
 from pathlib import Path
 
