@@ -4,11 +4,19 @@
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-3910/)
 [![PyPI](https://img.shields.io/pypi/v/scrapy-athlinks.svg)](https://pypi.python.org/pypi/scrapy-athlinks/)
 
+## NOTE
+
+This fork contains bug-fixes not present in the original repository. May, may not be merged ever.
+
+For that reason I'm making it read-only.
+
+
+## Introduction
+
 <!--## Documentation
 
 The official documentation is hosted on readthedocs.io: https://athlinks-scraper-scrapy.readthedocs.io/en/stable. -->
 
-## Introduction
 
 `scrapy-athlinks` provides the [`RaceSpider`](scrapy_athlinks/spiders/race.py) class.
 
