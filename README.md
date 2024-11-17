@@ -1,22 +1,23 @@
-# scrapy-athlinks: web scraper for race results hosted on Athlinks
+# athlinks_races: web scraper for race results hosted on Athlinks
 
 
 ## NOTE
 
-This is a fork of the original [athlinks-scraper-scrapy](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that 
+This is a fork of the original [scrapy-athlinks](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that 
 were not originally available on the project.
 
 
 ## Introduction
 
 
-`scrapy-athlinks` provides the [`RaceSpider`](athlinks_races/spiders/race.py) class.
+`athlinks_races` provides the [`RaceSpider`](athlinks_races/spiders/race.py) class.
 
 This spider crawls through all results pages from a race hosted on athlinks.com,
 building and following links to each athlete's individual results page, where it
 collects their split data. It also collects some metadata about the race itself.
 
 By default, the spider returns one race metadata object (`RaceItem`), and one
+
 `AthleteItem` per participant. 
 Each `AthleteItem` consists of some basic athlete info and a list of `RaceSplitItem`
 containing data from each split they recorded.
@@ -33,9 +34,9 @@ Scrapy can be operated entirely from python scripts.
 The package is available on [PyPi](https://pypi.org/project/athlinks-races) and can be installed with `pip`:
 
 ```sh
-python -m venv `$HOME/virtualenv/scrapy-athlinks/`
-. $HOME/virtualenv/scrapy-athlinks/bin/activate
-pip install scrapy-athlinks
+python -m venv `$HOME/virtualenv/athlinks_races/`
+. $HOME/virtualenv/athlinks_races/bin/activate
+pip install athlinks_races
 ```
 
 #### Example usage
