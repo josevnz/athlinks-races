@@ -9,10 +9,10 @@
      https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 """
 
-BOT_NAME = 'scrapy_athlinks'
+BOT_NAME = 'athlinks_races'
 
-SPIDER_MODULES = ['scrapy_athlinks.spiders']
-NEWSPIDER_MODULE = 'scrapy_athlinks.spiders'
+SPIDER_MODULES = ['athlinks_races.spiders']
+NEWSPIDER_MODULE = 'athlinks_races.spiders'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False

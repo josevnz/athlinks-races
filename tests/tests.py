@@ -6,13 +6,14 @@ import re
 import types
 import unittest
 from pathlib import Path
+from typing import Callable, List, Any
 from unittest import mock
 from urllib.parse import urlparse, parse_qs
 
 import scrapy
 
-from scrapy_athlinks import items
-from scrapy_athlinks.spiders import race
+from athlinks_races import items
+from athlinks_races.spiders import race
 
 RACE_ID = 4984
 EVENT_ID = 1017004
@@ -51,7 +52,7 @@ def create_mock_response(fname):
     )
 
 
-def test_dict_like(test_case, dict_like, expected_type_tups):
+def get_dict_like(test_case, dict_like, expected_type_tups):
     """
 
     Args:
@@ -67,7 +68,7 @@ def test_dict_like(test_case, dict_like, expected_type_tups):
         test_case.assertIsInstance(dict_like[key], expected_type)
 
 
-def select_by_criteria(my_list, criteria_func):
+def select_by_criteria(my_list: List[Any], criteria_func: Callable):
     """
 
     Args:
@@ -159,16 +160,7 @@ class TestRaceSpider(unittest.TestCase):
         ]:
             self.assertIsNotNone(url)
             with self.assertRaisesRegex(ValueError, 'Could not extract IDs'):
-                race.extract_ids(EVENT_ID)
-
-    @unittest.skip('coming soon?')
-    def test_process_inputs(self):
-        """
-        TBD
-        Returns:
-
-        """
-        raise NotImplementedError
+                race.extract_ids(EVENT_ID)  # Send an invalid value on purpose. Pisses off IDE
 
     def test_parse_metadata(self):
         """
@@ -203,7 +195,7 @@ class TestRaceSpider(unittest.TestCase):
 
         # Validate the returned RaceItem
         race_item = race_items[0]
-        test_dict_like(self, race_item, [
+        get_dict_like(self, race_item, [
             ('name', str),
             ('event_id', int),
             ('event_course_id', int),
@@ -212,7 +204,7 @@ class TestRaceSpider(unittest.TestCase):
             ('date_utc_ms', int)
         ])
         for split in race_item['split_info']:
-            test_dict_like(self, split, [
+            get_dict_like(self, split, [
                 ('name', str),
                 ('distance_m', int),
             ])
@@ -306,12 +298,12 @@ class TestRaceSpider(unittest.TestCase):
         item = sequence[0]
         self.assertIsInstance(item, items.AthleteItem)
 
-        test_dict_like(self, item, [
+        get_dict_like(self, item, [
             ('name', str),
             ('split_data', list),
         ])
         for split in item['split_data']:
-            test_dict_like(self, split, [
+            get_dict_like(self, split, [
                 ('name', str),
                 ('number', int),
                 ('time_ms', int),

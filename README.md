@@ -3,13 +3,14 @@
 
 ## NOTE
 
-This is a fork of the original [athlinks-scraper-scrapy](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that were not originally available on the project.
+This is a fork of the original [athlinks-scraper-scrapy](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that 
+were not originally available on the project.
 
 
 ## Introduction
 
 
-`scrapy-athlinks` provides the [`RaceSpider`](scrapy_athlinks/spiders/race.py) class.
+`scrapy-athlinks` provides the [`RaceSpider`](athlinks_races/spiders/race.py) class.
 
 This spider crawls through all results pages from a race hosted on athlinks.com,
 building and following links to each athlete's individual results page, where it
@@ -39,37 +40,37 @@ pip install scrapy-athlinks
 
 #### Example usage
 
-[A demo script is included in this repo](scrapy_athlinks/demo.py).
+[A demo script is included in this repo](athlinks_races/demo.py).
 
 ```python
 """
 Demonstrate the available classes.
-You can run as python scrapy_athlinks/demo.py
+You can run as python athlinks_races/demo.py
 """
 from scrapy.crawler import CrawlerProcess
-from scrapy_athlinks import RaceSpider, AthleteItem, RaceItem
+from athlinks_races import RaceSpider, AthleteItem, RaceItem
 
 
 def main():
     # Make settings for two separate output files: one for athlete data,
     # one for race metadata.
     settings = {
-      'FEEDS': {
-        # Athlete data. Inside this file will be a list of dicts containing
-        # data about each athlete's race and splits.
-        'athletes.json': {
-          'format': 'json',
-          'overwrite': True,
-          'item_classes': [AthleteItem],
-        },
-        # Race metadata. Inside this file will be a list with a single dict
-        # containing info about the race itself.
-        'metadata.json': {
-          'format': 'json',
-          'overwrite': True,
-          'item_classes': [RaceItem],
-        },
-      }
+        'FEEDS': {
+            # Athlete data. Inside this file will be a list of dicts containing
+            # data about each athlete's race and splits.
+            'athletes.json': {
+                'format': 'json',
+                'overwrite': True,
+                'item_classes': [AthleteItem],
+            },
+            # Race metadata. Inside this file will be a list with a single dict
+            # containing info about the race itself.
+            'metadata.json': {
+                'format': 'json',
+                'overwrite': True,
+                'item_classes': [RaceItem],
+            },
+        }
     }
     process = CrawlerProcess(settings=settings)
 
@@ -85,7 +86,7 @@ if __name__ == "__main__":
 If you do a ```pip install --editable .[lint,dev]``` then you can run as
 
 ```shell
-scrappy_athlinks_demo
+athlinks_cli
 ```
 
 Then you can build the wheelhouse to install locally if needed:
@@ -102,11 +103,11 @@ that you might create on your own.
 #### Installation
 
 ```sh
-python -m venv `$HOME/virtualenv/scrapy-athlinks/`
-. $HOME/virtualenv/scrapy-athlinks/bin/activate
-git clone https://github.com/aaron-schroeder/athlinks-scraper-scrapy
-cd athlinks-scraper-scrapy
-python install --editable .
+python -m venv `$HOME/virtualenv/athlink_races`
+. $HOME/virtualenv/athlink_races/bin/activate
+git clone https://github.com/josevnz/athlinks-races
+cd athlink-races
+python install --editable .[lint,dev]
 ```
 
 #### Example usage
@@ -114,10 +115,10 @@ python install --editable .
 Run a `RaceSpider`, few races with different years:
 
 ```shell
-cd scrapy_athlinks
-scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O 1018673.json
-scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O 1093108.json
-scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O 1093108.json
+cd athlinks_races
+scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O $HOME/1018673.json
+scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O $HOME/1093108.json
+scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
 ```
 
 ## Dependencies
@@ -126,8 +127,9 @@ All that is required is [Scrapy](https://scrapy.org/) (and its dependencies).
 
 ## Testing
 
-```
-make test
+```shell
+. $HOME/virtualenv/athlink_races/bin/activate
+pytest tests/*.py
 ```
 
 ## License
@@ -140,7 +142,9 @@ This project is licensed under the MIT License. See
 You can get in touch here:
 
 - GitHub: [https://github.com/josevnz](https://github.com/josevnz)
-
+- 
 ### Original Author
+
+If you want to take a look at the original project. He is not in charge of this forked version.
 
 - GitHub: [github.com/aaron-schroeder](https://github.com/aaron-schroeder)

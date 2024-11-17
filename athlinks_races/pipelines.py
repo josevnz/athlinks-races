@@ -15,7 +15,7 @@ import json
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
-from scrapy_athlinks import items
+from athlinks_races import items
 
 DEFAULT_DATA_FNAME = 'race.json'
 

@@ -1,7 +1,9 @@
 [build-system]
 requires = [
     "setuptools >= 70.1.0",
-    "pip"
+    "pip",
+    "wheel",
+    "build",
 
 ]
 build-backend = "setuptools.build_meta"
@@ -12,13 +14,12 @@ lint = [
 ]
 dev = [
     "twine",
-    "wheel",
-    "build",
+    "pytest"
 ]
 
 [project]
 name = "athlinks-races"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
     {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
@@ -26,7 +27,7 @@ authors = [
 description = "Web scraper for race results hosted on Athlinks."
 readme = "README.md"
 requires-python = ">=3.11"
-keywords = ["running", "race", "empire state", "racing"]
+keywords = ["running", "race", "tower race", "racing"]
 classifiers = [
     "Environment :: Console",
     "Development Status :: 3 - Alpha",
@@ -35,11 +36,11 @@ classifiers = [
     'Programming Language :: Python :: 3',
 ]
 dependencies = [
-    "Scrapy==2.6.3"
+    "Scrapy==2.11.2"
 ]
 license = {file = "LICENSE"}
 [project.scripts]
-scrapy_athlinks_cli = "scrapy_athlinks.cli:main"
+athlinks_races_cli = "athlinks_races.cli:main"
 
 [tool.setuptools]
 include-package-data = true
@@ -49,11 +50,11 @@ where = ["."]
 exclude = ["test*"]
 
 [tool.setuptools.package-data]
-scrappy_athlinks = ["*.txt"]
+athlinks_races = ["*.txt"]
 images = ["*.png", "*.svg"]
 
 [project.urls]
-Homepage = "http://kodegeek.com/"
+Homepage = "https://kodegeek.com/"
 Repository = "https://github.com/josevnz/athlinks-races.git"
 
 # Pylint is quite verbose, keep overrides here

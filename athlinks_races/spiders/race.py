@@ -9,7 +9,7 @@ from urllib.parse import urlparse, parse_qs
 from scrapy import FormRequest, Request, Spider
 from scrapy.http import Response
 
-from scrapy_athlinks.items import AthleteItem, AthleteSplitItem, RaceItem
+from athlinks_races.items import AthleteItem, AthleteSplitItem, RaceItem
 
 MAX_RESULT_LIMIT = 100  # As high as Athlinks will accept
 EXTRACT_ID_REGEXP = re.compile(r'/event/([0-9]\d*)/results/Event/([0-9]\d*)(?:/Course/([0-9]\d*))?')
