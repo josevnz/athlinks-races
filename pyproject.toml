@@ -14,7 +14,9 @@ lint = [
 ]
 dev = [
     "twine",
-    "pytest"
+    "pytest",
+    "textual-dev",
+    "docutils-stubs==0.0.22"
 ]
 
 [project]
@@ -36,7 +38,8 @@ classifiers = [
     'Programming Language :: Python :: 3',
 ]
 dependencies = [
-    "Scrapy==2.11.2"
+    "Scrapy==2.11.2",
+    "textual==0.86.1"
 ]
 license = {file = "LICENSE"}
 [project.scripts]
