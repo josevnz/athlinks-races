@@ -58,7 +58,7 @@ images = ["*.png", "*.svg"]
 
 [project.urls]
 Homepage = "https://kodegeek.com/"
-Repository = "https://github.com/josevnz/athlinks-races.git"
+Repository = "https://github.com/josevnz/athlinks-races/"
 
 # Pylint is quite verbose, keep overrides here
 # pylint --generate-toml-config
