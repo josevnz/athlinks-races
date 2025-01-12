@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from textual.logging import TextualHandler
 
 from athlinks_races import RaceSpider, AthleteItem, RaceItem
-from athlinks_races.app import RaceCrawler
+from athlinks_races.app import RaceCrawlerApp
 
 
 def main():
@@ -90,7 +90,7 @@ def main():
                 TextualHandler()
             ],
         )
-        app = RaceCrawler(athletes_file=options.athletes_rpt)
+        app = RaceCrawlerApp(athletes_file=options.athletes_rpt)
         app.title = "athlinks-races"
         app.crawler_process = crawler_process
         app.run(inline_no_clear=True)

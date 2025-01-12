@@ -39,10 +39,10 @@ class RaceSpider(Spider):
     def start_requests(self):
         yield Request(
             url=f'https://results.athlinks.com/metadata/event/{self.event_id}',
-            callback=self.parse_metadata
+            callback=self.parse_event_metadata
         )
 
-    def parse_metadata(self, response):
+    def parse_event_metadata(self, response):
         """
         Parse race JSON metadata details. Some interesting attributes
         - eventName

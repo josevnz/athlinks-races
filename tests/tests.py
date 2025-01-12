@@ -170,7 +170,7 @@ class TestRaceSpider(unittest.TestCase):
         """
         mock_response = create_mock_response('race_meta_response.json')
         mock_spider = mock.Mock(event_id=EVENT_ID, event_course_id=None)
-        result = race.RaceSpider.parse_metadata(
+        result = race.RaceSpider.parse_event_metadata(
             mock_spider,
             mock_response)
         self.assertIsInstance(result, types.GeneratorType)

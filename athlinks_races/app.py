@@ -16,7 +16,7 @@ from textual.widgets import Header, Footer, Log
 from athlinks_races import RaceSpider
 
 
-class RaceCrawler(App):
+class RaceCrawlerApp(App):
     """
     Call the crawler and present a nice summary once run is done.
     """
@@ -78,7 +78,7 @@ def main():
     crawler_process = CrawlerProcess()
     url = "https://www.athlinks.com/event/33913/results/Event/1018673/"
     crawler_process.crawl(RaceSpider, url)
-    app = RaceCrawler(Path(tempfile.mktemp()))
+    app = RaceCrawlerApp(Path(tempfile.mktemp()))
     app.crawler_process = crawler_process
     app.run()
 
