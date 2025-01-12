@@ -1,5 +1,10 @@
 # athlinks_races: web scraper for race results hosted on Athlinks
 
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/athlinks-races/0.0.5)](https://pypi.org/project/athlinks-races/)
+[![PyPI version](https://badge.fury.io/py/athlinks-races.svg)](https://badge.fury.io/py/athlinks-races)
+![OS support](https://img.shields.io/badge/Linux-red)
+[![Downloads](https://static.pepy.tech/badge/athlinks-races)](https://pepy.tech/project/athlinks-races)
+
 ![Screenshot of athlinks_races_cli --tui](athlinks_capture_screenshot.png)
 
 ## NOTE
