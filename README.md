@@ -3,8 +3,8 @@
 
 ## NOTE
 
-This is a fork of the original [scrapy-athlinks](https://github.com/josevnz/scrapy-athlinks). I decided to take over as I want to add features that 
-were not originally available on the project.
+This is a fork of the original [scrapy-athlinks](https://github.com/josevnz/scrapy-athlinks). I decided to take over 
+as I want to add features that were not originally available on the project.
 
 
 ## Introduction
@@ -16,11 +16,10 @@ This spider crawls through all results pages from a race hosted on athlinks.com,
 building and following links to each athlete's individual results page, where it
 collects their split data. It also collects some metadata about the race itself.
 
-By default, the spider returns one race metadata object (`RaceItem`), and one
+By default, the spider returns one race metadata object (`RaceItem`), and one `AthleteItem` per participant.
 
-`AthleteItem` per participant. 
-Each `AthleteItem` consists of some basic athlete info and a list of `RaceSplitItem`
-containing data from each split they recorded.
+Each `AthleteItem` consists of some basic athlete info and a list of `RaceSplitItem` containing data from each 
+split they recorded.
 
 ## How to use this package
 
@@ -34,14 +33,14 @@ Scrapy can be operated entirely from python scripts.
 The package is available on [PyPi](https://pypi.org/project/athlinks-races) and can be installed with `pip`:
 
 ```sh
-python -m venv `$HOME/virtualenv/athlinks_races/`
+python -m venv "$HOME/virtualenv/athlinks_races/"
 . $HOME/virtualenv/athlinks_races/bin/activate
 pip install athlinks_races
 ```
 
 #### Example usage
 
-[A demo script is included in this repo](athlinks_races/demo.py).
+[A demo script is included in this repo](athlinks_races/demo.py). It has plenty of features but is also monolithic on purpose.
 
 ```python
 """
@@ -143,7 +142,7 @@ This project is licensed under the MIT License. See
 You can get in touch here:
 
 - GitHub: [https://github.com/josevnz](https://github.com/josevnz)
-- 
+
 ### Original Author
 
 If you want to take a look at the original project. He is not in charge of this forked version.
