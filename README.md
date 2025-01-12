@@ -132,14 +132,29 @@ All that is required is [Scrapy](https://scrapy.org/) (and its dependencies).
 pytest tests/*.py
 ```
 
+Example session:
+
+```shell
+(athlinks_races) [josevnz@dmaf5 athlinks_races]$ pytest /home/josevnz/athlinks_races/tests/tests.py
+============================================================= test session starts =============================================================
+platform linux -- Python 3.11.6, pytest-8.3.3, pluggy-1.5.0
+rootdir: /home/josevnz/athlinks_races
+configfile: pyproject.toml
+collected 6 items                                                                                                                             
+
+tests/tests.py ......                                                                                                                   [100%]
+
+============================================================== 6 passed in 0.33s ==============================================================
+
+```
+
 ## License
 
-This project is licensed under the MIT License. See
-[LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-You can get in touch here:
+You can get in touch with me here:
 
 - GitHub: [https://github.com/josevnz](https://github.com/josevnz)
 

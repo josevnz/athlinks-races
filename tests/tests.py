@@ -164,7 +164,7 @@ class TestRaceSpider(unittest.TestCase):
 
     def test_parse_metadata(self):
         """
-
+        Parse race metadata
         Returns:
 
         """
@@ -282,7 +282,7 @@ class TestRaceSpider(unittest.TestCase):
 
     def test_parse_athlete(self):
         """
-
+        Parse athlete related data
         Returns:
 
         """
