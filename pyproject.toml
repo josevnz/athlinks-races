@@ -21,7 +21,7 @@ dev = [
 
 [project]
 name = "athlinks-races"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
     {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
@@ -39,7 +39,7 @@ classifiers = [
 ]
 dependencies = [
     "Scrapy==2.11.2",
-    "textual==0.86.1"
+    "textual==1.0.0"
 ]
 license = {file = "LICENSE"}
 [project.scripts]

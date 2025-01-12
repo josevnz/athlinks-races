@@ -1,5 +1,6 @@
 # athlinks_races: web scraper for race results hosted on Athlinks
 
+![Screenshot of athlinks_races_cli --tui](athlinks_capture_screenshot.png)
 
 ## NOTE
 
@@ -121,9 +122,22 @@ scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/109
 scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
 ```
 
+Or the newer thlinks_races_cli, with the `--tui` argument:
+
+```shell
+(athlinks-races) [josevnz@dmaf5 athlinks_races]$ athlinks_races_cli --tui
+2025-01-12 14:56:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-01-12 14:56:31 [scrapy.core.engine] INFO: Spider opened
+2025-01-12 14:56:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-12 14:56:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-01-12 14:56:31 [asyncio] DEBUG: Using selector: EpollSelector
+
+```
+
 ## Dependencies
 
-All that is required is [Scrapy](https://scrapy.org/) (and its dependencies).
+All that is required is [Scrapy](https://scrapy.org/) and [Textual](https://github.com/Textualize/textual) (and its dependencies).
 
 ## Testing
 
