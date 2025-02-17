@@ -29,7 +29,15 @@ split they recorded.
 
 ## How to use this package
 
-### Option 1: In python scripts
+### Using uv
+
+If you have installed [uv](https://docs.astral.sh/uv/), is as simple as this:
+
+```shell
+uvx --from athlinks-races athlinks_races_cli --tui --race_url https://www.athlinks.com/event/382111/results/Event/1093108/Results
+```
+
+### python scripts
 
 Scrapy can be operated entirely from python scripts.
 [See the scrapy documentation for more info.](https://docs.scrapy.org/en/latest/topics/practices.html#run-scrapy-from-a-script)
@@ -101,7 +109,7 @@ Then you can build the wheelhouse to install locally if needed:
 python -m build .
 ```
 
-### Option 2: Command line
+### Command line
 
 Alternatively, you may clone this repo for use like a typical Scrapy project
 that you might create on your own.
