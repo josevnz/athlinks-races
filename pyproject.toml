@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "athlinks-races"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
     {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},

@@ -7,12 +7,6 @@
 
 ![Screenshot of athlinks_races_cli --tui](athlinks_capture_screenshot.png)
 
-## NOTE
-
-This is a fork of the original [scrapy-athlinks](https://github.com/josevnz/scrapy-athlinks). I decided to take over 
-as I want to add features that were not originally available on the project.
-
-
 ## Introduction
 
 
