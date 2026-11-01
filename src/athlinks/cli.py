@@ -8,8 +8,8 @@ from pathlib import Path
 from scrapy.crawler import CrawlerProcess
 from textual.logging import TextualHandler
 
-from athlinks_races import RaceSpider, AthleteItem, RaceItem
-from athlinks_races.app import RaceCrawlerApp
+from athlinks import RaceSpider, AthleteItem, RaceItem
+from athlinks.app import RaceCrawlerApp
 
 
 def main():

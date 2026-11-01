@@ -1,4 +1,4 @@
-# athlinks_races: web scraper for race results hosted on Athlinks
+# athlinks-races: web scraper for race results hosted on Athlinks
 
 [![Supported Python Versions](https://img.shields.io/pypi/pyversions/athlinks-races/0.0.5)](https://pypi.org/project/athlinks-races/)
 [![PyPI version](https://badge.fury.io/py/athlinks-races.svg)](https://badge.fury.io/py/athlinks-races)
@@ -16,7 +16,7 @@ as I want to add features that were not originally available on the project.
 ## Introduction
 
 
-`athlinks_races` provides the [`RaceSpider`](athlinks_races/spiders/race.py) class.
+`athlinks` provides the [`RaceSpider`](src/athlinks/spiders/race.py) class.
 
 This spider crawls through all results pages from a race hosted on athlinks.com,
 building and following links to each athlete's individual results page, where it
@@ -44,25 +44,29 @@ Scrapy can be operated entirely from python scripts.
 
 #### Installation
 
-The package is available on [PyPi](https://pypi.org/project/athlinks-races) and can be installed with `pip`:
+The package is available on [PyPi](https://pypi.org/project/athlinks-races). In your own [uv](https://docs.astral.sh/uv/) project:
 
 ```sh
-python -m venv "$HOME/virtualenv/athlinks_races/"
-. $HOME/virtualenv/athlinks_races/bin/activate
-pip install athlinks_races
+uv add athlinks-races
+```
+
+Or, inside an existing virtual environment:
+
+```sh
+uv pip install athlinks-races
 ```
 
 #### Example usage
 
-[A demo script is included in this repo](athlinks_races/demo.py). It has plenty of features but is also monolithic on purpose.
+[A demo script is included in this repo](src/athlinks/demo.py). It has plenty of features but is also monolithic on purpose.
 
 ```python
 """
 Demonstrate the available classes.
-You can run as python athlinks_races/demo.py
+You can run as `uv run python -m athlinks.demo`
 """
 from scrapy.crawler import CrawlerProcess
-from athlinks_races import RaceSpider, AthleteItem, RaceItem
+from athlinks import RaceSpider, AthleteItem, RaceItem
 
 
 def main():
@@ -97,16 +101,16 @@ if __name__ == "__main__":
     main()
 ```
 
-If you do a ```pip install --editable .[lint,dev]``` then you can run as
+If you clone this repo and run `uv sync --all-groups` then you can run as
 
 ```shell
-athlinks_cli
+uv run athlinks_races_cli
 ```
 
-Then you can build the wheelhouse to install locally if needed:
+Then you can build the distributions (sdist and wheel) to install locally if needed:
 
 ```shell
-python -m build .
+uv build
 ```
 
 ### Command line
@@ -117,28 +121,29 @@ that you might create on your own.
 #### Installation
 
 ```sh
-python -m venv `$HOME/virtualenv/athlink_races`
-. $HOME/virtualenv/athlink_races/bin/activate
 git clone https://github.com/josevnz/athlinks-races
-cd athlink-races
-python install --editable .[lint,dev]
+cd athlinks-races
+uv sync --all-groups
 ```
+
+`uv sync` creates the virtual environment in `.venv` and installs the Python version pinned in
+`.python-version` (3.14) if it is not already available.
 
 #### Example usage
 
 Run a `RaceSpider`, few races with different years:
 
 ```shell
-cd athlinks_races
-scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O $HOME/1018673.json
-scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O $HOME/1093108.json
-scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
+cd athlinks-races
+uv run scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O $HOME/1018673.json
+uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O $HOME/1093108.json
+uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
 ```
 
-Or the newer thlinks_races_cli, with the `--tui` argument:
+Or the newer `athlinks_races_cli`, with the `--tui` argument:
 
 ```shell
-(athlinks-races) [josevnz@dmaf5 athlinks_races]$ athlinks_races_cli --tui
+(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run athlinks_races_cli --tui
 2025-01-12 14:56:31 [scrapy.middleware] INFO: Enabled item pipelines:
 []
 2025-01-12 14:56:31 [scrapy.core.engine] INFO: Spider opened
@@ -155,17 +160,16 @@ All that is required is [Scrapy](https://scrapy.org/) and [Textual](https://gith
 ## Testing
 
 ```shell
-. $HOME/virtualenv/athlink_races/bin/activate
-pytest tests/*.py
+uv run pytest tests/tests.py
 ```
 
 Example session:
 
 ```shell
-(athlinks_races) [josevnz@dmaf5 athlinks_races]$ pytest /home/josevnz/athlinks_races/tests/tests.py
+(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run pytest /home/josevnz/athlinks-races/tests/tests.py
 ============================================================= test session starts =============================================================
 platform linux -- Python 3.11.6, pytest-8.3.3, pluggy-1.5.0
-rootdir: /home/josevnz/athlinks_races
+rootdir: /home/josevnz/athlinks-races
 configfile: pyproject.toml
 collected 6 items                                                                                                                             
 

@@ -13,7 +13,7 @@ from textual.logging import TextualHandler
 from textual.reactive import Reactive
 from textual.widgets import Header, Footer, Log
 
-from athlinks_races import RaceSpider
+from athlinks import RaceSpider
 
 
 class RaceCrawlerApp(App):

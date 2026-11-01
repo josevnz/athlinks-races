@@ -15,7 +15,7 @@ import json
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
-from athlinks_races import items
+from athlinks import items
 
 DEFAULT_DATA_FNAME = 'race.json'
 

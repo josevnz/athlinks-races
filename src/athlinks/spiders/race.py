@@ -9,7 +9,7 @@ from urllib.parse import urlparse, parse_qs
 from scrapy import FormRequest, Request, Spider
 from scrapy.http import Response
 
-from athlinks_races.items import AthleteItem, AthleteSplitItem, RaceItem
+from athlinks.items import AthleteItem, AthleteSplitItem, RaceItem
 
 MAX_RESULT_LIMIT = 100  # As high as Athlinks will accept
 EXTRACT_ID_REGEXP = re.compile(r'/event/([0-9]\d*)/results/Event/([0-9]\d*)(?:/Course/([0-9]\d*))?')
@@ -37,6 +37,9 @@ class RaceSpider(Spider):
         self.event_course_id = None
 
     def start_requests(self):
+        """
+        Request the event metadata that bootstraps the crawl.
+        """
         yield Request(
             url=f'https://results.athlinks.com/metadata/event/{self.event_id}',
             callback=self.parse_event_metadata
@@ -65,7 +68,7 @@ class RaceSpider(Spider):
 
         yield create_race_page_request(self, first_result_num=0)
 
-    def parse(self, response, **kwargs) -> Iterator[AthleteItem]:
+    def parse(self, response, **_kwargs) -> Iterator[AthleteItem]:
         """
         Parse responses
         Args:

@@ -12,8 +12,8 @@ from urllib.parse import urlparse, parse_qs
 
 import scrapy
 
-from athlinks_races import items
-from athlinks_races.spiders import race
+from athlinks import items
+from athlinks.spiders import race
 
 RACE_ID = 4984
 EVENT_ID = 1017004
