@@ -12,3 +12,4 @@ athletes.json
 metadata.json
 tests/_trial_temp/**
 .venv/
+.codegraph/
