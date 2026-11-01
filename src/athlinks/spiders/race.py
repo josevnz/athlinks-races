@@ -3,7 +3,7 @@ Crawling / Scraping logic.
 """
 import json
 import re
-from typing import Any, Dict, Iterator
+from typing import Any, AsyncIterator, Dict, Iterator
 from urllib.parse import urlparse, parse_qs
 
 from scrapy import FormRequest, Request, Spider
@@ -36,7 +36,7 @@ class RaceSpider(Spider):
         self.master_event_id, self.event_id, self.course_id = extract_ids(url)
         self.event_course_id = None
 
-    def start_requests(self):
+    async def start(self) -> AsyncIterator[Request]:
         """
         Request the event metadata that bootstraps the crawl.
         """

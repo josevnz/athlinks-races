@@ -2,6 +2,7 @@
 Command line interface parser
 """
 import logging
+import sys
 from argparse import ArgumentParser
 from pathlib import Path
 
@@ -79,21 +80,30 @@ def main():
             },
         }
     }
-    crawler_process = CrawlerProcess(settings=settings)
-    crawler_process.crawl(RaceSpider, options.race_url)
     if not options.tui:
+        crawler_process = CrawlerProcess(settings=settings)
+        crawler_process.crawl(RaceSpider, options.race_url)
         crawler_process.start()
-    else:
-        logging.basicConfig(
-            level="INFO",
-            handlers=[
-                TextualHandler()
-            ],
-        )
-        app = RaceCrawlerApp(athletes_file=options.athletes_rpt)
-        app.title = "athlinks-races"
-        app.crawler_process = crawler_process
-        app.run(inline_no_clear=True)
+        return
+
+    # Scrapy cannot share Textual's event loop, so run the crawl in a child process.
+    crawl_cmd = [
+        sys.executable, "-m", "athlinks.cli",
+        "--athletes_rpt", options.athletes_rpt.as_posix(),
+        "--metadata_rpt", options.metadata_rpt.as_posix(),
+        "--format", options.format,
+        "--race_url", options.race_url,
+    ]
+    logging.basicConfig(
+        level="INFO",
+        handlers=[
+            TextualHandler()
+        ],
+    )
+    app = RaceCrawlerApp(athletes_file=options.athletes_rpt, crawl_cmd=crawl_cmd)
+    app.title = "athlinks-races"
+    app.run(inline_no_clear=True)
+
 
 
 if __name__ == "__main__":
