@@ -1,13 +1,13 @@
 """
 Demonstrate the available classes.
-You can run as python athlinks_races/demo.py
+You can run as python -m athlinks.demo
 """
 # pylint: disable=duplicate-code
 from argparse import ArgumentParser
 from pathlib import Path
 
 from scrapy.crawler import CrawlerProcess
-from athlinks_races import RaceSpider, AthleteItem, RaceItem
+from athlinks import RaceSpider, AthleteItem, RaceItem
 
 
 def main():

@@ -3,6 +3,9 @@ Unit tests for the scraper
 """
 import json
 import re
+import subprocess
+import sys
+import tempfile
 import types
 import unittest
 from pathlib import Path
@@ -12,8 +15,8 @@ from urllib.parse import urlparse, parse_qs
 
 import scrapy
 
-from athlinks_races import items
-from athlinks_races.spiders import race
+from athlinks import items
+from athlinks.spiders import race
 
 RACE_ID = 4984
 EVENT_ID = 1017004
@@ -310,3 +313,32 @@ class TestRaceSpider(unittest.TestCase):
                 ('distance_m', int),
                 ('time_with_penalties_ms', int),
             ])
+
+
+class TestOfflineCrawl(unittest.TestCase):
+    """
+    Full crawls answered from the snapshots, without touching the network.
+    """
+    script = Path(__file__).parent / 'offline_crawl.py'
+
+    def run_crawl(self, *extra):
+        """
+        Run the offline crawl in a child process and return the parsed JSON lines.
+        """
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / 'out.jsonl'
+            result = subprocess.run(
+                [sys.executable, str(self.script), str(out), *extra],
+                timeout=60, check=False, capture_output=True, text=True
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            with open(out, 'r', encoding='utf-8') as f:
+                return [json.loads(line) for line in f if line.strip()]
+
+    def test_plain_crawl(self):
+        """Plain crawl yields 10 athletes."""
+        self.assertEqual(len(self.run_crawl()), 10)
+
+    def test_tui_crawl(self):
+        """Crawl run through the headless TUI yields 10 athletes."""
+        self.assertEqual(len(self.run_crawl('--tui')), 10)

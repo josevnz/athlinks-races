@@ -1,66 +1,51 @@
 [build-system]
-requires = [
-    "setuptools >= 70.1.0",
-    "pip",
-    "wheel",
-    "build",
-    "twine==6.1.0"
-
-]
-build-backend = "setuptools.build_meta"
-
-[project.optional-dependencies]
-lint = [
-    "pylint==3.0.3"
-]
-dev = [
-    "twine==6.1.0",
-    "pytest==8.3.4",
-    "textual-dev==1.7.0",
-    "docutils-stubs==0.0.22",
-    "build==1.2.2.post1"
-]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
 
 [project]
 name = "athlinks-races"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
     {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
 ]
 description = "Web scraper for race results hosted on Athlinks."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 keywords = ["running", "race", "tower race", "racing"]
 classifiers = [
     "Environment :: Console",
     "Development Status :: 3 - Alpha",
-    'License :: OSI Approved :: MIT License',
     'Intended Audience :: Developers',
     'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.14',
 ]
 dependencies = [
-    "Scrapy==2.11.2",
+    "Scrapy==2.19.0",
     "textual==2.0.3"
 ]
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
+
 [project.scripts]
-athlinks_races_cli = "athlinks_races.cli:main"
-
-[tool.setuptools]
-include-package-data = true
-
-[tool.setuptools.packages.find]
-where = ["."]
-exclude = ["test*"]
-
-[tool.setuptools.package-data]
-athlinks_races = ["*.txt"]
-images = ["*.png", "*.svg"]
+athlinks_races_cli = "athlinks.cli:main"
 
 [project.urls]
 Homepage = "https://kodegeek.com/"
 Repository = "https://github.com/josevnz/athlinks-races/"
+
+[dependency-groups]
+lint = [
+    "pylint==4.1.3"
+]
+dev = [
+    "pytest==9.2.0",
+    "textual-dev==1.8.0",
+    "docutils-stubs==0.0.22",
+]
+
+[tool.uv.build-backend]
+module-name = "athlinks"
 
 # Pylint is quite verbose, keep overrides here
 # pylint --generate-toml-config
@@ -71,8 +56,7 @@ ignore-patterns = ["^\\.#"]
 jobs = 0
 limit-inference-results = 100
 persistent = true
-py-version = "3.11"
-suggestion-mode = true
+py-version = "3.14"
 
 [tool.pylint.basic]
 argument-naming-style = "snake_case"
