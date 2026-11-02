@@ -3,13 +3,13 @@ requires = ["uv_build>=0.11,<0.12"]
 build-backend = "uv_build"
 
 [project]
-name = "athlinks-races"
-version = "0.0.9"
+name = "race-crawler"
+version = "0.1.0"
 authors = [
     {name = "Jose Vicente Nunez", email = "kodegeek.com@protonmail.com"},
     {name = "Aaron Schroeder", email = "aaron@trailzealot.com"},
 ]
-description = "Web scraper for race results hosted on Athlinks."
+description = "Web scraper for race results hosted on Athlinks and ChronoTrack public results pages."
 readme = "README.md"
 requires-python = ">=3.14"
 keywords = ["running", "race", "tower race", "racing"]
@@ -35,7 +35,7 @@ chronotrack_races_cli = "chronotrack.cli:main"
 
 [project.urls]
 Homepage = "https://kodegeek.com/"
-Repository = "https://github.com/josevnz/athlinks-races/"
+Repository = "https://github.com/josevnz/races-crawler/"
 
 [dependency-groups]
 lint = [

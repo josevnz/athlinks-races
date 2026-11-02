@@ -1,9 +1,9 @@
 # race-crawler: web scraper for race results hosted on Athlinks and ChronoTrack
 
-[![Supported Python Versions](https://img.shields.io/pypi/pyversions/athlinks-races/0.0.5)](https://pypi.org/project/athlinks-races/)
-[![PyPI version](https://badge.fury.io/py/athlinks-races.svg)](https://badge.fury.io/py/athlinks-races)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/race-crawler)](https://pypi.org/project/race-crawler/)
+[![PyPI version](https://badge.fury.io/py/race-crawler.svg)](https://badge.fury.io/py/race-crawler)
 ![OS support](https://img.shields.io/badge/Linux-red)
-[![Downloads](https://static.pepy.tech/badge/athlinks-races)](https://pepy.tech/project/athlinks-races)
+[![Downloads](https://static.pepy.tech/badge/race-crawler)](https://pepy.tech/project/race-crawler)
 
 ![Screenshot of athlinks_races_cli --tui](athlinks_capture_screenshot.png)
 
@@ -24,9 +24,10 @@ split they recorded.
 `race-crawler` is a race results crawler that supports more than one timing provider:
 
 - **Athlinks** (`athlinks` package, `athlinks_races_cli` command): races hosted on athlinks.com.
-- **ChronoTrack** (`chronotrack` package, `chronotrack_races_cli` command): ChronoTrack race results.
+- **ChronoTrack** (`chronotrack` package, `chronotrack_races_cli` command): parses the public results pages
+  hosted on sites.chronotrack.com (race metadata, athletes and their splits).
 
-The project was previously named `athlinks-races`. The PyPI package is still published as `athlinks-races`.
+The project was previously named `athlinks-races` (versions up to 0.0.9 are published on PyPI under that name).
 
 ## How to use this package
 
@@ -35,8 +36,17 @@ The project was previously named `athlinks-races`. The PyPI package is still pub
 If you have installed [uv](https://docs.astral.sh/uv/), is as simple as this:
 
 ```shell
-uvx --from athlinks-races athlinks_races_cli --tui --race_url https://www.athlinks.com/event/382111/results/Event/1093108/Results
+uvx --from race-crawler athlinks_races_cli --tui --race_url https://www.athlinks.com/event/382111/results/Event/1093108/Results
 ```
+
+ChronoTrack public results work the same way; pass a division results page:
+
+```shell
+uvx --from race-crawler chronotrack_races_cli --tui --race_url 'https://sites.chronotrack.com/event/93943/results?raceId=249433&divisionId=2804693'
+```
+
+Pages are loaded with a headless browser and cached on disk; use `--offline` to parse only cached pages, or
+`--refresh` to load everything again. Run `chronotrack_races_cli --help` for all the options.
 
 ### python scripts
 
@@ -45,16 +55,16 @@ Scrapy can be operated entirely from python scripts.
 
 #### Installation
 
-The package is available on [PyPi](https://pypi.org/project/athlinks-races). In your own [uv](https://docs.astral.sh/uv/) project:
+The package is available on [PyPi](https://pypi.org/project/race-crawler). In your own [uv](https://docs.astral.sh/uv/) project:
 
 ```sh
-uv add athlinks-races
+uv add race-crawler
 ```
 
 Or, inside an existing virtual environment:
 
 ```sh
-uv pip install athlinks-races
+uv pip install race-crawler
 ```
 
 #### Example usage

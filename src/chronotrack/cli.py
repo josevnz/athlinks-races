@@ -76,7 +76,7 @@ def main():
         crawl_cmd.append("--offline")
     logging.basicConfig(level="INFO", handlers=[TextualHandler()])
     app = RaceCrawlerApp(athletes_file=options.athletes_rpt, crawl_cmd=crawl_cmd)
-    app.title = "chronotrack-races"
+    app.title = "race-crawler"
     app.run(inline_no_clear=True)
 
 
