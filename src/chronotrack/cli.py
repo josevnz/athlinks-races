@@ -17,10 +17,10 @@ DEFAULT_URL = "https://sites.chronotrack.com/event/93943/results?raceId=249433&d
 def build_parser() -> ArgumentParser:
     """Command line options"""
     parser = ArgumentParser(description=__doc__)
-    athletes_location = Path.home() / "chronotrack-races.json"
+    athletes_location = Path.home() / "race-crawler-chronotrack.json"
     parser.add_argument("--athletes_rpt", type=Path, default=athletes_location,
                         help=f"Location of the athletes race results. Default={athletes_location}")
-    meta_location = Path.home() / "chronotrack-metadata.json"
+    meta_location = Path.home() / "race-crawler-chronotrack-metadata.json"
     parser.add_argument("--metadata_rpt", type=Path, default=meta_location,
                         help=f"Location of the race metadata results, JSON. Default={meta_location}")
     parser.add_argument("--format", default="jsonlines", choices=["json", "jsonlines", "xml"],
