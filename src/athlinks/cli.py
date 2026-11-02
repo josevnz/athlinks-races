@@ -101,7 +101,7 @@ def main():
         ],
     )
     app = RaceCrawlerApp(athletes_file=options.athletes_rpt, crawl_cmd=crawl_cmd)
-    app.title = "athlinks-races"
+    app.title = "race-crawler"
     app.run(inline_no_clear=True)
 
 
