@@ -1,0 +1,2548 @@
+{
+ "url": "https://sites.chronotrack.com/event/93943/results?raceId=249433&divisionId=2804693&page=1",
+ "next_data": {
+  "props": {
+   "pageProps": {
+    "eventMetadata": {
+     "id": 93943,
+     "name": "Empire State Building Observation Deck Run-Up",
+     "description": "The Empire State Building Run-Up (ESBRU)\u2014the world\u2019s first and most famous tower race\u2014challenges runners from near and far to race up its famed 86 flights\u20141,576 stairs. While visitors can reach the building\u2019s Observatory via elevator in under one minute, the fastest runners have covered the 86 floors by foot in about 10 minutes. Leaders in the sport of professional tower-running converge at the Empire State Building in what some consider the ultimate test of endurance. ",
+     "hashtag": null,
+     "localStartDate": "Oct 6, 2026 8:00 PM",
+     "localEndDate": "Oct 6, 2026 11:00 PM",
+     "startTimeMs": 1791331200000,
+     "endTimeMs": 1791342000000,
+     "erpUrl": null,
+     "graphics": [
+      {
+       "id": 1010803,
+       "eventId": 93943,
+       "contentUsage": "media-landscape",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/media-landscape/93943.png?v=6a6beff50d3adcf64c7017a6532b5014d51c2798",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010804,
+       "eventId": 93943,
+       "contentUsage": "media-sponsor",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/media-sponsor/93943.png?v=06d3602f9927d1a3e607952a340a48ab9720b34d",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010805,
+       "eventId": 93943,
+       "contentUsage": "media-sponsor-sample",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/media-sponsor-sample/93943.jpg?v=e5fda5cd1b69be0f246c882c909e715a67549e6d",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010806,
+       "eventId": 93943,
+       "contentUsage": "media-portrait",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/media-portrait/93943.png?v=2acac4188628a534caf738eca0710cfcd58c2efa",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010807,
+       "eventId": 93943,
+       "contentUsage": "media-landscape-samp",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/media-landscape-samp/93943.jpg?v=8ecd572ae9edaf1e2b83561fc20683d448d13995",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010808,
+       "eventId": 93943,
+       "contentUsage": "reg-bg-web",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/reg-bg-web/93943.jpg?v=b1d5aa243fc1afe82403e44ab902a3eab636871f",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010809,
+       "eventId": 93943,
+       "contentUsage": "responsive-header",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/responsive-header/93943.png?v=8824fa9c66a561c17549f9c057313fc6f63b2d89",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010810,
+       "eventId": 93943,
+       "contentUsage": "email-header",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/email-header/93943.png?v=0ffd5e516bfee4f1578da18235252fd301596e5d",
+       "mtime": 1787164466
+      },
+      {
+       "id": 1010811,
+       "eventId": 93943,
+       "contentUsage": "reg-share",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/reg-share/93943.png?v=9c0e9b6224a8c278b2235d6b0c01ebc3a7bfdcfc",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010812,
+       "eventId": 93943,
+       "contentUsage": "results-bg",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/results-bg/93943.jpg?v=b1d5aa243fc1afe82403e44ab902a3eab636871f",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010813,
+       "eventId": 93943,
+       "contentUsage": "responsive-logo",
+       "isDefault": false,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/responsive-logo/93943.png?v=407d6996990dd3598a7922c75842627a0a94fb2a",
+       "mtime": 1787164466
+      },
+      {
+       "id": 1010814,
+       "eventId": 93943,
+       "contentUsage": "facebook-icon",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/facebook-icon/93943.jpg?v=b6e86520dc3892d46b8d1221317e6addffab2569",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010815,
+       "eventId": 93943,
+       "contentUsage": "kiosk-race-img",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/kiosk-race-img/93943.png?v=929dcf06fc3f79dbe9ead74f840a3a1279604ea7",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010816,
+       "eventId": 93943,
+       "contentUsage": "reg-bg-kiosk",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/reg-bg-kiosk/93943.jpg?v=e2624815dd7af963340a583dc11246216689bfc0",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010817,
+       "eventId": 93943,
+       "contentUsage": "receipt-header",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/receipt-header/93943.png?v=e20b25829b2601a45a096f8244a2910e05d34344",
+       "mtime": 1787164391
+      },
+      {
+       "id": 1010818,
+       "eventId": 93943,
+       "contentUsage": "hero-image",
+       "isDefault": true,
+       "url": "https://ctlive-static.chronotrack.com/img/event/banner/hero-image/93943.png?v=cc9148b67e5d592e32390a4701058cd92cd1b18e",
+       "mtime": 1787164466
+      }
+     ],
+     "isTestEvent": false,
+     "eventGoogleTagManagerKey": null,
+     "eventType": "Stair Climb",
+     "brand": {
+      "primaryColor": "#2C314F"
+     },
+     "organization": {
+      "id": 469,
+      "name": "Super Race Systems",
+      "url": "https://superracesystems.com/",
+      "email": "results@superracesystems.com",
+      "googleTagManagerKey": null
+     },
+     "socialLinks": {
+      "facebookUrl": null,
+      "instagramUrl": null,
+      "twitterUrl": null,
+      "websiteUrl": "https://www.esbnyc.com/empire-state-building-run",
+      "tiktokUrl": null
+     },
+     "sponsors": [
+      {
+       "id": 25450,
+       "eventId": 93943,
+       "name": "NYU Langone Health",
+       "url": "",
+       "path": "/event-sponsorship/93943/22697-Sponsor Logo 300x250 PNG or JPG (2).png",
+       "logoUrl": "https://ctlive-static.chronotrack.com/event-sponsorship/93943/22697-Sponsor%20Logo%20300x250%20PNG%20or%20JPG%20(2).png?v=1787164391",
+       "originalLogoUrl": null,
+       "isTitleSponsor": false,
+       "isVisible": true,
+       "displayOrder": 1,
+       "tierId": null
+      },
+      {
+       "id": 25451,
+       "eventId": 93943,
+       "name": "Challenged Athletes Foundation",
+       "url": "",
+       "path": "/event-sponsorship/93943/22698-Sponsor Logo 300x250 PNG or JPG (1).png",
+       "logoUrl": "https://ctlive-static.chronotrack.com/event-sponsorship/93943/22698-Sponsor%20Logo%20300x250%20PNG%20or%20JPG%20(1).png?v=1787164391",
+       "originalLogoUrl": null,
+       "isTitleSponsor": false,
+       "isVisible": true,
+       "displayOrder": 2,
+       "tierId": null
+      }
+     ],
+     "sponsorshipTiers": [
+      {
+       "id": null,
+       "eventId": 93943,
+       "isHidden": false,
+       "name": null,
+       "displayOrder": 1,
+       "sponsors": [
+        {
+         "id": 25450,
+         "eventId": 93943,
+         "name": "NYU Langone Health",
+         "url": "",
+         "path": "/event-sponsorship/93943/22697-Sponsor Logo 300x250 PNG or JPG (2).png",
+         "logoUrl": "https://ctlive-static.chronotrack.com/event-sponsorship/93943/22697-Sponsor%20Logo%20300x250%20PNG%20or%20JPG%20(2).png?v=1787164391",
+         "originalLogoUrl": null,
+         "isTitleSponsor": false,
+         "isVisible": true,
+         "displayOrder": 1,
+         "tierId": null
+        },
+        {
+         "id": 25451,
+         "eventId": 93943,
+         "name": "Challenged Athletes Foundation",
+         "url": "",
+         "path": "/event-sponsorship/93943/22698-Sponsor Logo 300x250 PNG or JPG (1).png",
+         "logoUrl": "https://ctlive-static.chronotrack.com/event-sponsorship/93943/22698-Sponsor%20Logo%20300x250%20PNG%20or%20JPG%20(1).png?v=1787164391",
+         "originalLogoUrl": null,
+         "isTitleSponsor": false,
+         "isVisible": true,
+         "displayOrder": 2,
+         "tierId": null
+        }
+       ]
+      }
+     ],
+     "isTieredSponsorship": false,
+     "registration": {
+      "published": false
+     },
+     "timer": {
+      "name": "Super Race Systems",
+      "url": "http://www.superracesystems.com",
+      "email": "results@superracesystems.com",
+      "displayName": "Super Race Systems",
+      "displayContactInfo": "results@superracesystems.com"
+     },
+     "location": {
+      "displayOrder": null,
+      "id": 124659007,
+      "isHidden": false,
+      "name": "Empire State Building",
+      "latitude": 40.753685,
+      "longitude": -73.999164,
+      "timeZone": "America/New_York",
+      "address": {
+       "street": "",
+       "street2": "",
+       "city": "New York",
+       "postalCode": "10001",
+       "region": "New York",
+       "regionId": "US-NY",
+       "country": "United States",
+       "countryId": "US"
+      }
+     },
+     "logoUrl": "https://ctlive-static.chronotrack.com/img/event/banner/responsive-logo/93943.png?v=407d6996990dd3598a7922c75842627a0a94fb2a",
+     "thirdPartyRegLink": null,
+     "resultsUrl": null,
+     "donationUrl": null,
+     "hasHeroImage": false,
+     "wantsPhotoPurchasing": 0,
+     "photoPrice": null,
+     "photoServiceType": "Free",
+     "photoServiceName": null,
+     "photoServiceUrl": null,
+     "isPhotoEnabled": true,
+     "isVideoEnabled": true,
+     "showAwardsTab": true,
+     "raceRosterStatsMode": "DISTANCE",
+     "extendedDescription": null,
+     "courseMaps": [],
+     "extraLocations": [],
+     "schedule": [
+      {
+       "id": 198086,
+       "raceId": 249433,
+       "name": "Run-Up",
+       "startTime": 1791331200,
+       "endTime": 1791342000,
+       "isHidden": false
+      }
+     ],
+     "isCtliveAzpResults": true,
+     "useScoringEngineV3": false,
+     "certificate": {
+      "enabled": true,
+      "backgroundUrl": "/event-certificate/default/stairs.jpg",
+      "textColor": "ffffff",
+      "dateFormat": "m/d/Y",
+      "headerBgColor": "2C314F",
+      "bgOpacity": 70,
+      "showEventName": true,
+      "showPace": true,
+      "revision": 0
+     },
+     "athlinksMasterEventId": null,
+     "liveVideo": null,
+     "modified": 1793574847752,
+     "races": [
+      {
+       "doubleDippingDisallowPolicy": [
+        "GENDER",
+        "MASTERS",
+        "AGE"
+       ],
+       "fullCourseIntervalId": 660830,
+       "id": 249433,
+       "intervals": [
+        {
+         "displayOrder": 1,
+         "distance": {
+          "meters": 320,
+          "metersFromStart": 320.04,
+          "units": "ft"
+         },
+         "id": 660830,
+         "name": "Full Course",
+         "paceUnits": "min/mi",
+         "raceType": "run",
+         "type": "course"
+        },
+        {
+         "displayOrder": 2,
+         "distance": {
+          "meters": 61,
+          "metersFromStart": 60.96,
+          "units": "ft"
+         },
+         "id": 660831,
+         "name": "20th Floor",
+         "paceUnits": "min/mi",
+         "raceType": "run",
+         "type": "course"
+        },
+        {
+         "displayOrder": 3,
+         "distance": {
+          "meters": 229,
+          "metersFromStart": 228.6,
+          "units": "ft"
+         },
+         "id": 660832,
+         "name": "65th Floor",
+         "paceUnits": "min/mi",
+         "raceType": "run",
+         "type": "course"
+        }
+       ],
+       "name": "Run-Up",
+       "plannedStartTime": 1791331200,
+       "plannedEndTime": 1791342000,
+       "actualStartTime": 1791331183.75,
+       "actualEndTime": 1791342000,
+       "microsite": {
+        "wantsRoster": true,
+        "wantsResults": true,
+        "wantsPredictiveTiming": true
+       },
+       "waves": [
+        {
+         "id": 360254,
+         "name": "Universal",
+         "plannedStartOffset": 0,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360255,
+         "name": "Elite Men",
+         "plannedStartOffset": 0,
+         "actualStartOffset": 0,
+         "actualStartTime": 1791331183.75
+        },
+        {
+         "id": 360256,
+         "name": "Elite Women",
+         "plannedStartOffset": 120,
+         "actualStartOffset": 100.19000005722,
+         "actualStartTime": 1791331283.94
+        },
+        {
+         "id": 360257,
+         "name": "Specialty",
+         "plannedStartOffset": 600,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360258,
+         "name": "Tenant",
+         "plannedStartOffset": 1800,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360259,
+         "name": "Sponsor",
+         "plannedStartOffset": 1200,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360260,
+         "name": "General 1",
+         "plannedStartOffset": 2400,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360261,
+         "name": "general 4",
+         "plannedStartOffset": 0,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360262,
+         "name": "General 2",
+         "plannedStartOffset": 2400,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        },
+        {
+         "id": 360263,
+         "name": "General 3",
+         "plannedStartOffset": 3000,
+         "actualStartOffset": null,
+         "actualStartTime": null
+        }
+       ],
+       "externalResultsUrl": null,
+       "displayOptions": {
+        "showBibs": true,
+        "showGenders": true,
+        "showAges": true,
+        "showHometown": true,
+        "showDivisionTotals": true,
+        "roundedTimes": true
+       },
+       "hasCourseRoute": false,
+       "divisions": [
+        {
+         "id": 2804693,
+         "name": "Overall",
+         "rankType": "CHIP",
+         "type": "OPEN",
+         "displayOrder": 1,
+         "gender": null,
+         "minAge": null,
+         "maxAge": null,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804694,
+         "name": "Female",
+         "rankType": "CHIP",
+         "type": "SEX",
+         "displayOrder": 2,
+         "gender": "F",
+         "minAge": null,
+         "maxAge": null,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804695,
+         "name": "F18-24",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 3,
+         "gender": "F",
+         "minAge": 18,
+         "maxAge": 24,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804696,
+         "name": "F25-29",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 4,
+         "gender": "F",
+         "minAge": 25,
+         "maxAge": 29,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804697,
+         "name": "F30-39",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 5,
+         "gender": "F",
+         "minAge": 30,
+         "maxAge": 39,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804698,
+         "name": "F40-49",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 6,
+         "gender": "F",
+         "minAge": 40,
+         "maxAge": 49,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804699,
+         "name": "F50-59",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 7,
+         "gender": "F",
+         "minAge": 50,
+         "maxAge": 59,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804700,
+         "name": "F60-69",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 8,
+         "gender": "F",
+         "minAge": 60,
+         "maxAge": 69,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804701,
+         "name": "F70+",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 9,
+         "gender": "F",
+         "minAge": 70,
+         "maxAge": 120,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804702,
+         "name": "Male",
+         "rankType": "CHIP",
+         "type": "SEX",
+         "displayOrder": 10,
+         "gender": "M",
+         "minAge": null,
+         "maxAge": null,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804703,
+         "name": "M18-24",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 11,
+         "gender": "M",
+         "minAge": 18,
+         "maxAge": 24,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804704,
+         "name": "M25-29",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 12,
+         "gender": "M",
+         "minAge": 25,
+         "maxAge": 29,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804705,
+         "name": "M30-39",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 13,
+         "gender": "M",
+         "minAge": 30,
+         "maxAge": 39,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804706,
+         "name": "M40-49",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 14,
+         "gender": "M",
+         "minAge": 40,
+         "maxAge": 49,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804707,
+         "name": "M50-59",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 15,
+         "gender": "M",
+         "minAge": 50,
+         "maxAge": 59,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804708,
+         "name": "M60-69",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 16,
+         "gender": "M",
+         "minAge": 60,
+         "maxAge": 69,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804709,
+         "name": "M70+",
+         "rankType": "CHIP",
+         "type": "AGE",
+         "displayOrder": 17,
+         "gender": "M",
+         "minAge": 70,
+         "maxAge": 120,
+         "awards": {
+          "depth": null,
+          "rankType": "CHIP",
+          "publish": false
+         }
+        },
+        {
+         "id": 2804710,
+         "name": "Top 3 Female",
+         "rankType": "GUN",
+         "type": "OTHER",
+         "displayOrder": 18,
+         "gender": null,
+         "minAge": null,
+         "maxAge": null,
+         "awards": {
+          "depth": 3,
+          "rankType": "CHIP",
+          "publish": true
+         }
+        },
+        {
+         "id": 2804711,
+         "name": "Top 3 Male",
+         "rankType": "GUN",
+         "type": "OTHER",
+         "displayOrder": 19,
+         "gender": null,
+         "minAge": null,
+         "maxAge": null,
+         "awards": {
+          "depth": 3,
+          "rankType": "CHIP",
+          "publish": true
+         }
+        }
+       ],
+       "overallDivisionId": 2804693
+      }
+     ],
+     "eventSchedule": [
+      {
+       "id": 198086,
+       "raceId": 249433,
+       "name": "Run-Up",
+       "startTime": 1791331200,
+       "endTime": 1791342000,
+       "isHidden": false
+      }
+     ]
+    },
+    "masterEventMetadata": null,
+    "storefrontData": {
+     "currencyId": "USD",
+     "eventId": 93943,
+     "organizerId": 469,
+     "orgFeeAllocation": "0.00000",
+     "hometown": "New York, NY",
+     "imageUrl": "https://ctlive-static.chronotrack.com/img/event/banner/responsive-logo/93943.png?v=407d6996990dd3598a7922c75842627a0a94fb2a",
+     "internationalShippingAmount": null,
+     "localStartDate": "Oct 6, 2026 8:00 PM",
+     "localEndDate": "Oct 6, 2026 11:00 PM",
+     "name": "Empire State Building Observation Deck Run-Up",
+     "namePrefix": "ESBRU",
+     "regClosingDate": "",
+     "registerUrl": "https://register.chronotrack.com/r/93943",
+     "regOpeningDate": "",
+     "shippingAmount": null,
+     "timeZone": "America/New_York",
+     "dateFormat": "m/d/Y",
+     "url": "https://www.esbnyc.com/empire-state-building-run",
+     "eventGoogleTagManagerKey": null,
+     "orgGoogleTagManagerKey": null,
+     "tealiumTagManagerKey": null,
+     "chipDisambiguationPolicy": "NONE",
+     "description": "The Empire State Building Run-Up (ESBRU)\u2014the world\u2019s first and most famous tower race\u2014challenges runners from near and far to race up its famed 86 flights\u20141,576 stairs. While visitors can reach the building\u2019s Observatory via elevator in under one minute, the fastest runners have covered the 86 floors by foot in about 10 minutes. Leaders in the sport of professional tower-running converge at the Empire State Building in what some consider the ultimate test of endurance. ",
+     "replyToEmail": null,
+     "emailHeader": null,
+     "emailDescription": null,
+     "location": {
+      "city": "New York",
+      "country_id": "US",
+      "postal_code": "10001",
+      "region_id": "US-NY",
+      "time_zone": "America/New_York",
+      "street": ""
+     },
+     "bazuServices": [
+      "TIMING",
+      "MESSAGING",
+      "PHOTO",
+      "VIDEO",
+      "ATHLINKS_V2_RESULTS",
+      "REBRACKET_ASYNC"
+     ],
+     "maxRegCount": null,
+     "isOnSiteRegOpened": true,
+     "isOnlineRegOpened": true,
+     "wantsTransparentPricing": true,
+     "hasHeroImage": false,
+     "isTestEvent": false,
+     "orgEmail": "results@superracesystems.com",
+     "isRegPublishedAthlinks": false,
+     "thirdPartyRegLink": null,
+     "hideHeroImage": true,
+     "isRegistrationDisabled": true,
+     "products": [],
+     "paymentProcessor": null
+    },
+    "pageMeta": {
+     "title": "Empire State Building Observation Deck Run-Up Results",
+     "description": "See full results for Empire State Building Observation Deck Run-Up, including rankings, times, and performance for every competitor."
+    },
+    "token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ6TkhORUhFTlZHZ3NldE5tMnd3eTdySldqaDBDRDNpU2kyRFdoRVRfTEdjIn0.eyJleHAiOjE3OTM1NzYyMTIsImlhdCI6MTc5MzU3NTkxMiwianRpIjoiZjk4NjgxZGUtOTFkNS00MjU3LWEzNDEtNDQxYzExNTIxMGIyIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmNocm9ub3RyYWNrLmNvbS9yZWFsbXMvY3RsaXZlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImUwNmIwZmNmLTY4ZGYtNDVjYS1iNTc3LTNiZTAxZWI4ZGU1NyIsInR5cCI6IkJlYXJlciIsImF6cCI6InJlZ2lzdHJhdGlvbiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2hvc3QuZG9ja2VyLmludGVybmFsOjMwMDMiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLWN0bGl2ZSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImNsaWVudEhvc3QiOiIxMC4xLjEyLjIwOSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXJlZ2lzdHJhdGlvbiIsImNsaWVudEFkZHJlc3MiOiIxMC4xLjEyLjIwOSIsImNsaWVudF9pZCI6InJlZ2lzdHJhdGlvbiJ9.XtwRxcETBdSz-k6fWbgX_LV9VKVd5vWAY0Gwj1mmeuoFyLDjoO9XhHVgXopSkcswq6i9xkjHN4FQonuG_bMonH4xExjgPuJQm_6L3VzgnQjiyw3nTTR8V0iUGzJ99W3OUIzsVr_B8R4-WOgMbwTh8Z9V9v2eCyOi_4T76RyFTbAAkEf4WvThHJX81LpK85uzMmr4i-q0hRoK3mbfMSM5C4cKvAhF58ouk79JQUtHTBIIcPvm5mN0iFshYU-tFdNZ_WMlH_1o0oNUtvJSHvMREVXU8TYELkbBPcBJN5X9MERrBtNJeHoPaCQNJgAdKbIGU8kawcP0Z2CReQFRL4Yg2A"
+   },
+   "__N_SSP": true
+  },
+  "page": "/event/[eventId]/results",
+  "query": {
+   "raceId": "249433",
+   "divisionId": "2804693",
+   "page": "1",
+   "eventId": "93943"
+  },
+  "buildId": "Ky_j4-NfRPXkaPPIL6q7y",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gssp": true,
+  "scriptLoader": []
+ },
+ "responses": [
+  {
+   "url": "https://reignite-api.athlinks.com/azp/ctlive/event/93943/race/249433/division/2804693/results?from=0&limit=50",
+   "body": {
+    "division": {
+     "id": 2804693,
+     "name": "Overall",
+     "rankType": "chip",
+     "totalAthletes": 356,
+     "type": "overall"
+    },
+    "intervals": [
+     {
+      "distance": {
+       "meters": 320,
+       "metersFromStart": 320.04,
+       "units": "ft"
+      },
+      "full": true,
+      "id": 660830,
+      "name": "Full Course",
+      "paceUnits": "min/mi",
+      "raceType": "run",
+      "results": [
+       {
+        "age": 42,
+        "bib": "16",
+        "chipTimeInMillis": 677650,
+        "displayName": "Ryoji Watanabe",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804711,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 678360,
+        "id": 80710407,
+        "location": {
+         "country": "JP",
+         "locality": "Tokyo",
+         "region": "13"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 1,
+         "overall": 1,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331862110,
+        "startTimeInMillis": 1791331184460,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 32,
+        "bib": "13",
+        "chipTimeInMillis": 686580,
+        "displayName": "Wai Ching Soh",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804711,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 686700,
+        "id": 80710449,
+        "location": {
+         "country": "MY",
+         "locality": "Kuala Lumpur"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 2,
+         "overall": 2,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331870450,
+        "startTimeInMillis": 1791331183870,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 54,
+        "bib": "8",
+        "chipTimeInMillis": 751890,
+        "displayName": "Sproule Love",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804711,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 752330,
+        "id": 80710413,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 3,
+         "overall": 3,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331936080,
+        "startTimeInMillis": 1791331184190,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 23,
+        "bib": "5",
+        "chipTimeInMillis": 753680,
+        "displayName": "Cole Hetzel",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804703,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 755120,
+        "id": 80710394,
+        "location": {
+         "country": "US",
+         "locality": "Fort Mitchell",
+         "region": "KY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 4,
+         "overall": 4,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331938870,
+        "startTimeInMillis": 1791331185190,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 48,
+        "bib": "1",
+        "chipTimeInMillis": 765620,
+        "displayName": "Omar Bekkali",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804706,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 766140,
+        "id": 80710367,
+        "location": {
+         "country": "LU",
+         "locality": "Wecker"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 5,
+         "overall": 5,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331949890,
+        "startTimeInMillis": 1791331184270,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 32,
+        "bib": "7",
+        "chipTimeInMillis": 769450,
+        "displayName": "Angel Lopez amor",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 771350,
+        "id": 80710377,
+        "location": {
+         "country": "ES",
+         "locality": "Alicante"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 6,
+         "overall": 6,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331955100,
+        "startTimeInMillis": 1791331185650,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 45,
+        "bib": "12",
+        "chipTimeInMillis": 784460,
+        "displayName": "David Roeske",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804706,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 785740,
+        "id": 80710410,
+        "location": {
+         "country": "US",
+         "locality": "Brooklyn",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 7,
+         "overall": 7,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791331969490,
+        "startTimeInMillis": 1791331185030,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 45,
+        "bib": "311",
+        "chipTimeInMillis": 796020,
+        "displayName": "Chris Calimano",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804706,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2341230,
+        "id": 80709798,
+        "location": {
+         "country": "US",
+         "locality": "Staten Island",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 8,
+         "overall": 8,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333541230,
+        "startTimeInMillis": 1791332745210,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 42,
+        "bib": "34",
+        "chipTimeInMillis": 811460,
+        "displayName": "Annemarie Wilhelm",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804710,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 811840,
+        "id": 80710387,
+        "location": {
+         "country": "AT",
+         "locality": "Bad Erlach"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 1,
+         "overall": 9,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332095780,
+        "startTimeInMillis": 1791331284320,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 33,
+        "bib": "339",
+        "chipTimeInMillis": 812960,
+        "displayName": "Harrison Kieffer",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2352940,
+        "id": 80709633,
+        "location": {
+         "country": "US",
+         "locality": "Ambler",
+         "region": "PA"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 9,
+         "overall": 10,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333552940,
+        "startTimeInMillis": 1791332739980,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 40,
+        "bib": "33",
+        "chipTimeInMillis": 824460,
+        "displayName": "Yuko Tateishi",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804710,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 825080,
+        "id": 80710470,
+        "location": {
+         "country": "JP",
+         "locality": "fukaya city",
+         "region": "11"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 2,
+         "overall": 11,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332109020,
+        "startTimeInMillis": 1791331284560,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 38,
+        "bib": "375",
+        "chipTimeInMillis": 824650,
+        "displayName": "INOUE SHOTA",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2397930,
+        "id": 80710067,
+        "location": {
+         "country": "JP",
+         "locality": "Seto-shi",
+         "region": "23"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 10,
+         "overall": 12,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333597930,
+        "startTimeInMillis": 1791332773280,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 43,
+        "bib": "22",
+        "chipTimeInMillis": 846120,
+        "displayName": "Anna Carlson",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804710,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 846860,
+        "id": 80710429,
+        "location": {
+         "country": "US",
+         "locality": "Brooklyn",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 3,
+         "overall": 13,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332130800,
+        "startTimeInMillis": 1791331284680,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 50,
+        "bib": "17",
+        "chipTimeInMillis": 852090,
+        "displayName": "Alexander Workman",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 853340,
+        "id": 80710440,
+        "location": {
+         "country": "US",
+         "locality": "Schenectady",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 11,
+         "overall": 14,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332037090,
+        "startTimeInMillis": 1791331185000,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 26,
+        "bib": "205",
+        "chipTimeInMillis": 856880,
+        "displayName": "Matthew Borkoski",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804704,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2250830,
+        "id": 80710659,
+        "location": {
+         "country": "US",
+         "locality": "Pearl River",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 12,
+         "overall": 15,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333450830,
+        "startTimeInMillis": 1791332593950,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 45,
+        "bib": "25",
+        "chipTimeInMillis": 866740,
+        "displayName": "Shari Klarfeld",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804698,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 867160,
+        "id": 80710398,
+        "location": {
+         "country": "US",
+         "locality": "Plainview",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 4,
+         "overall": 16,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332151100,
+        "startTimeInMillis": 1791331284360,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 52,
+        "bib": "383",
+        "chipTimeInMillis": 867270,
+        "displayName": "Michael Schneider",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2455840,
+        "id": 80709742,
+        "location": {
+         "country": "DE",
+         "locality": "Weiterstadt",
+         "region": "HE"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 13,
+         "overall": 17,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333655840,
+        "startTimeInMillis": 1791332788570,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 24,
+        "bib": "388",
+        "chipTimeInMillis": 869410,
+        "displayName": "Johann Sch\u00fctte",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804703,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2445920,
+        "id": 80710080,
+        "location": {
+         "country": "DE",
+         "locality": "K\u00f6ln",
+         "region": "NW"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 14,
+         "overall": 18,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333645920,
+        "startTimeInMillis": 1791332776510,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 53,
+        "bib": "4",
+        "chipTimeInMillis": 871270,
+        "displayName": "Mark Ewell",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 872970,
+        "id": 80710360,
+        "location": {
+         "country": "US",
+         "locality": "Colorado Springs",
+         "region": "CO"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 15,
+         "overall": 19,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332056720,
+        "startTimeInMillis": 1791331185450,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 34,
+        "bib": "164",
+        "chipTimeInMillis": 882380,
+        "displayName": "Roman Fedosieiev",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1786210,
+        "id": 80710170,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 16,
+         "overall": 20,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791332986210,
+        "startTimeInMillis": 1791332103830,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 62,
+        "bib": "234",
+        "chipTimeInMillis": 905230,
+        "displayName": "Alan Kahn",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804708,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2372340,
+        "id": 80710646,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 17,
+         "overall": 21,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333572340,
+        "startTimeInMillis": 1791332667110,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 61,
+        "bib": "10",
+        "chipTimeInMillis": 909080,
+        "displayName": "Stephen Marsalese",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804708,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 910890,
+        "id": 80710400,
+        "location": {
+         "country": "US",
+         "locality": "Bronx",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 18,
+         "overall": 22,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332094640,
+        "startTimeInMillis": 1791331185560,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 50,
+        "bib": "24",
+        "chipTimeInMillis": 913410,
+        "displayName": "Andreza Diaferia",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804699,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 914390,
+        "id": 80710363,
+        "location": {
+         "country": "BR",
+         "locality": "Sao Paulo"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 5,
+         "overall": 23,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332198330,
+        "startTimeInMillis": 1791331284920,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 46,
+        "bib": "158",
+        "chipTimeInMillis": 915460,
+        "displayName": "Denis Sweeney",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804706,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1857960,
+        "id": 80710281,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 19,
+         "overall": 24,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333057960,
+        "startTimeInMillis": 1791332142500,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 37,
+        "bib": "390",
+        "chipTimeInMillis": 931320,
+        "displayName": "Florent BOULENC",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2580840,
+        "id": 80709846,
+        "location": {
+         "country": "FR",
+         "locality": "Paris"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 20,
+         "overall": 25,
+         "primary": 5,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333780840,
+        "startTimeInMillis": 1791332849520,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 44,
+        "bib": "373",
+        "chipTimeInMillis": 932160,
+        "displayName": "Blanca Romero",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804698,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 2551830,
+        "id": 80710127,
+        "location": {
+         "country": "MX",
+         "locality": "Cdmx"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 6,
+         "overall": 26,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333751830,
+        "startTimeInMillis": 1791332819670,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 45,
+        "bib": "29",
+        "chipTimeInMillis": 936950,
+        "displayName": "Jill Paha",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804698,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 937370,
+        "id": 80710447,
+        "location": {
+         "country": "US",
+         "locality": "Grayslake",
+         "region": "IL"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 7,
+         "overall": 27,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332221310,
+        "startTimeInMillis": 1791331284360,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 54,
+        "bib": "15",
+        "chipTimeInMillis": 942110,
+        "displayName": "ROBERTO VELAZQUEZ LEYVA",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 943120,
+        "id": 80710380,
+        "location": {
+         "country": "MX",
+         "locality": "MEXICO"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 21,
+         "overall": 28,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332126870,
+        "startTimeInMillis": 1791331184760,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 38,
+        "bib": "389",
+        "chipTimeInMillis": 947390,
+        "displayName": "Armand VIDAL",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2600790,
+        "id": 80709843,
+        "location": {
+         "country": "FR",
+         "locality": "Paris"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 22,
+         "overall": 29,
+         "primary": 6,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333800790,
+        "startTimeInMillis": 1791332853400,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 27,
+        "bib": "336",
+        "chipTimeInMillis": 950780,
+        "displayName": "Kolya Illarionov",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804704,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2980690,
+        "id": 80709987,
+        "location": {
+         "country": "US",
+         "locality": "New York City",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 23,
+         "overall": 30,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791334180690,
+        "startTimeInMillis": 1791333229910,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 38,
+        "bib": "381",
+        "chipTimeInMillis": 953800,
+        "displayName": "Jan Langdeel Pedersen",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2599420,
+        "id": 80710101,
+        "location": {
+         "country": "DK",
+         "locality": "Frederiksberg"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 24,
+         "overall": 31,
+         "primary": 7,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333799420,
+        "startTimeInMillis": 1791332845620,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 36,
+        "bib": "115",
+        "chipTimeInMillis": 957200,
+        "displayName": "Joshua Dees",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1641170,
+        "id": 80870416,
+        "location": {
+         "country": "US",
+         "locality": "Brooklyn",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 25,
+         "overall": 32,
+         "primary": 8,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791332841170,
+        "startTimeInMillis": 1791331883970,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 68,
+        "bib": "341",
+        "chipTimeInMillis": 967020,
+        "displayName": "Harrison Lauer",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804708,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2550760,
+        "id": 80709981,
+        "location": {
+         "country": "US",
+         "locality": "Pittsburgh",
+         "region": "PA"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 26,
+         "overall": 33,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333750760,
+        "startTimeInMillis": 1791332783740,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 61,
+        "bib": "20",
+        "chipTimeInMillis": 967340,
+        "displayName": "Elizabeth Aguilar Becerril",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 968930,
+        "id": 80710384,
+        "location": {
+         "country": "MX",
+         "locality": "MEXICO"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 8,
+         "overall": 34,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332252870,
+        "startTimeInMillis": 1791331285530,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 29,
+        "bib": "137",
+        "chipTimeInMillis": 972910,
+        "displayName": "Joseph Downey",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804704,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1924700,
+        "id": 80710356,
+        "location": {
+         "country": "US",
+         "locality": "West Islip",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 27,
+         "overall": 35,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333124700,
+        "startTimeInMillis": 1791332151790,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 46,
+        "bib": "31",
+        "chipTimeInMillis": 979800,
+        "displayName": "SEOW CHER TAN",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804698,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 981910,
+        "id": 80710403,
+        "location": {
+         "country": "SG",
+         "locality": "Singapore"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 9,
+         "overall": 36,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332265850,
+        "startTimeInMillis": 1791331286050,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 29,
+        "bib": "163",
+        "chipTimeInMillis": 984250,
+        "displayName": "Brett Boyle",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804704,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1952750,
+        "id": 80710329,
+        "location": {
+         "country": "US",
+         "locality": "West Islip",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 28,
+         "overall": 37,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333152750,
+        "startTimeInMillis": 1791332168500,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 61,
+        "bib": "32",
+        "chipTimeInMillis": 986630,
+        "displayName": "Nancy Tantone",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 988230,
+        "id": 80710460,
+        "location": {
+         "country": "US",
+         "locality": "West Islip",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 10,
+         "overall": 38,
+         "primary": 2,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332272170,
+        "startTimeInMillis": 1791331285540,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 30,
+        "bib": "208",
+        "chipTimeInMillis": 987740,
+        "displayName": "Peter Bretschneider",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2471880,
+        "id": 80710652,
+        "location": {
+         "country": "US",
+         "locality": "Stamford",
+         "region": "CT"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 29,
+         "overall": 39,
+         "primary": 9,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333671880,
+        "startTimeInMillis": 1791332684140,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 66,
+        "bib": "382",
+        "chipTimeInMillis": 992820,
+        "displayName": "Ignacio Manrique",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804708,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2562480,
+        "id": 80709694,
+        "location": {
+         "country": "MX",
+         "locality": "Mexico",
+         "region": "MEX"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 30,
+         "overall": 40,
+         "primary": 4,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333762480,
+        "startTimeInMillis": 1791332769660,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 51,
+        "bib": "14",
+        "chipTimeInMillis": 993950,
+        "displayName": "David Tromp",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 995330,
+        "id": 80710432,
+        "location": {
+         "country": "US",
+         "locality": "Glenmont",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 31,
+         "overall": 41,
+         "primary": 5,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332179080,
+        "startTimeInMillis": 1791331185130,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 48,
+        "bib": "378",
+        "chipTimeInMillis": 995280,
+        "displayName": "Brian Gustaveson",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804706,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2575730,
+        "id": 80709995,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 32,
+         "overall": 42,
+         "primary": 5,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333775730,
+        "startTimeInMillis": 1791332780450,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 60,
+        "bib": "28",
+        "chipTimeInMillis": 999780,
+        "displayName": "Tricia O'Hara",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 1001160,
+        "id": 80710391,
+        "location": {
+         "country": "US",
+         "locality": "San Francisco",
+         "region": "CA"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 11,
+         "overall": 43,
+         "primary": 3,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331283940,
+        "endTimeWithPenaltyInMillis": 1791332285100,
+        "startTimeInMillis": 1791331285320,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 33,
+        "bib": "276",
+        "chipTimeInMillis": 1004020,
+        "displayName": "Sean Swords",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2383270,
+        "id": 80710632,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 33,
+         "overall": 44,
+         "primary": 10,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333583270,
+        "startTimeInMillis": 1791332579250,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 33,
+        "bib": "53",
+        "chipTimeInMillis": 1007180,
+        "displayName": "Eoin Costelloe",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1333230,
+        "id": 80769087,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 34,
+         "overall": 45,
+         "primary": 11,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791332533230,
+        "startTimeInMillis": 1791331526050,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 36,
+        "bib": "227",
+        "chipTimeInMillis": 1008480,
+        "displayName": "Alan Grunwald",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2431910,
+        "id": 80710526,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 35,
+         "overall": 46,
+         "primary": 12,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333631910,
+        "startTimeInMillis": 1791332623430,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 54,
+        "bib": "6",
+        "chipTimeInMillis": 1010370,
+        "displayName": "Jim kilts",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804707,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1012860,
+        "id": 80710458,
+        "location": {
+         "country": "US",
+         "locality": "Tarpon Springs",
+         "region": "FL"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 36,
+         "overall": 47,
+         "primary": 6,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331183750,
+        "endTimeWithPenaltyInMillis": 1791332196610,
+        "startTimeInMillis": 1791331186240,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 36,
+        "bib": "453",
+        "chipTimeInMillis": 1010880,
+        "displayName": "HWEE AUN KHAW",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 2905220,
+        "id": 80709719,
+        "location": {
+         "country": "MY",
+         "locality": "SEPANG"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 37,
+         "overall": 48,
+         "primary": 13,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791334105220,
+        "startTimeInMillis": 1791333094340,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 30,
+        "bib": "66",
+        "chipTimeInMillis": 1012950,
+        "displayName": "Omar Cecere",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804705,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 1326170,
+        "id": 80710184,
+        "location": {
+         "country": "US",
+         "locality": "East Elmhurst",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 38,
+         "overall": 49,
+         "primary": 14,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791332526170,
+        "startTimeInMillis": 1791331513220,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 29,
+        "bib": "273",
+        "chipTimeInMillis": 1015440,
+        "displayName": "Rachel Sternberg",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804696,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 2434830,
+        "id": 80710614,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 12,
+         "overall": 50,
+         "primary": 1,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791333634830,
+        "startTimeInMillis": 1791332619390,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       }
+      ]
+     }
+    ],
+    "race": {
+     "id": 249433,
+     "name": "Run-Up"
+    },
+    "source": "mongodb"
+   }
+  }
+ ]
+}

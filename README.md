@@ -154,20 +154,20 @@ All that is required is [Scrapy](https://scrapy.org/) and [Textual](https://gith
 ## Testing
 
 ```shell
-uv run pytest tests/tests.py
+uv run pytest tests/test_athlinks.py
 ```
 
 Example session:
 
 ```shell
-(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run pytest /home/josevnz/athlinks-races/tests/tests.py
+(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run pytest /home/josevnz/athlinks-races/tests/test_athlinks.py
 ============================================================= test session starts =============================================================
 platform linux -- Python 3.11.6, pytest-8.3.3, pluggy-1.5.0
 rootdir: /home/josevnz/athlinks-races
 configfile: pyproject.toml
 collected 6 items                                                                                                                             
 
-tests/tests.py ......                                                                                                                   [100%]
+tests/test_athlinks.py ......                                                                                                                   [100%]
 
 ============================================================== 6 passed in 0.33s ==============================================================
 

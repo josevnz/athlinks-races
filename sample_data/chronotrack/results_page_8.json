@@ -1,0 +1,257 @@
+{
+ "url": "https://sites.chronotrack.com/event/93943/results?raceId=249433&divisionId=2804693&page=8",
+ "next_data": {},
+ "responses": [
+  {
+   "url": "https://reignite-api.athlinks.com/azp/ctlive/event/93943/race/249433/division/2804693/results?from=350&limit=50",
+   "body": {
+    "division": {
+     "id": 2804693,
+     "name": "Overall",
+     "rankType": "chip",
+     "totalAthletes": 356,
+     "type": "overall"
+    },
+    "intervals": [
+     {
+      "distance": {
+       "meters": 320,
+       "metersFromStart": 320.04,
+       "units": "ft"
+      },
+      "full": true,
+      "id": 660830,
+      "name": "Full Course",
+      "paceUnits": "min/mi",
+      "raceType": "run",
+      "results": [
+       {
+        "age": 40,
+        "bib": "144",
+        "chipTimeInMillis": 2876970,
+        "displayName": "Praxi Mittal",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804698,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 3955930,
+        "id": 80710168,
+        "location": {
+         "country": "US",
+         "locality": "Hoboken",
+         "region": "NJ"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 140,
+         "overall": 351,
+         "primary": 27,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791335155930,
+        "startTimeInMillis": 1791332278960,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 67,
+        "bib": "435",
+        "chipTimeInMillis": 2946290,
+        "displayName": "SARA RAICAR",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 4975860,
+        "id": 80710108,
+        "location": {
+         "country": "US",
+         "locality": "New York",
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 141,
+         "overall": 352,
+         "primary": 13,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791336175860,
+        "startTimeInMillis": 1791333229570,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 60,
+        "bib": "408",
+        "chipTimeInMillis": 3174130,
+        "displayName": "Jill Brady",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 5056850,
+        "id": 80709690,
+        "location": {
+         "country": "US",
+         "locality": "Oradell",
+         "region": "NJ"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 142,
+         "overall": 353,
+         "primary": 14,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791336256850,
+        "startTimeInMillis": 1791333082720,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 60,
+        "bib": "463",
+        "chipTimeInMillis": 3184770,
+        "displayName": "Donna Thibedeau",
+        "divisions": {
+         "gender": 2804694,
+         "overall": 2804693,
+         "primary": 2804700,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "F",
+        "gunTimeInMillis": 5071820,
+        "id": 80878159,
+        "location": {
+         "country": "US",
+         "locality": null,
+         "region": "NY"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 143,
+         "overall": 354,
+         "primary": 15,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791336271820,
+        "startTimeInMillis": 1791333087050,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       },
+       {
+        "age": 21,
+        "bib": "65",
+        "chipTimeInMillis": 3243450,
+        "displayName": "Justin Seifin",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804703,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 3721840,
+        "id": 80719097,
+        "location": {
+         "country": "US",
+         "locality": "Helmetta",
+         "region": "NJ"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 210,
+         "overall": 355,
+         "primary": 8,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791334921840,
+        "startTimeInMillis": 1791331678390,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       }
+      ]
+     },
+     {
+      "distance": {
+       "meters": 61,
+       "metersFromStart": 60.96,
+       "units": "ft"
+      },
+      "full": false,
+      "id": 660831,
+      "name": "20th Floor",
+      "paceUnits": "min/mi",
+      "raceType": "run",
+      "results": [
+       {
+        "age": 28,
+        "bib": "62",
+        "chipTimeInMillis": 314690,
+        "displayName": "Bradley Borr",
+        "divisions": {
+         "gender": 2804702,
+         "overall": 2804693,
+         "primary": 2804704,
+         "other": []
+        },
+        "entryType": "IND",
+        "gender": "M",
+        "gunTimeInMillis": 763890,
+        "id": 80718131,
+        "location": {
+         "country": "US",
+         "locality": "Morganville",
+         "region": "NJ"
+        },
+        "private": false,
+        "rankings": {
+         "gender": 192,
+         "overall": 309,
+         "primary": 29,
+         "other": []
+        },
+        "startGunTimeInMillis": 1791331200000,
+        "endTimeWithPenaltyInMillis": 1791331963890,
+        "startTimeInMillis": 1791331649200,
+        "status": "CONF",
+        "teamType": null,
+        "team": null
+       }
+      ]
+     }
+    ],
+    "race": {
+     "id": 249433,
+     "name": "Run-Up"
+    },
+    "source": "mongodb"
+   }
+  }
+ ]
+}

@@ -13,3 +13,4 @@ metadata.json
 tests/_trial_temp/**
 .venv/
 .codegraph/
+.cache/
