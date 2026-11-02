@@ -1,0 +1,143 @@
+{
+ "url": "https://sites.chronotrack.com/event/93943/results/entry/80718131",
+ "next_data": null,
+ "responses": [
+  {
+   "url": "https://reignite-api.athlinks.com/azp/ctlive/event/93943/entry/80718131/result",
+   "body": {
+    "age": 28,
+    "bib": "62",
+    "isManageableInCtLive": false,
+    "displayName": "Bradley Borr",
+    "entryType": "IND",
+    "gender": "M",
+    "location": {
+     "country": "US",
+     "locality": "Morganville",
+     "region": "NJ"
+    },
+    "private": false,
+    "status": "CONF",
+    "teamType": null,
+    "waveId": 360254,
+    "waveName": "Universal",
+    "team": null,
+    "hasValidEmail": true,
+    "waveStartTime": 1791331200,
+    "race": {
+     "id": 249433,
+     "name": "Run-Up",
+     "plannedStartTime": 1791331200,
+     "plannedEndTime": 1791342000,
+     "actualStartTime": 1791331183.75,
+     "actualEndTime": 1791342000,
+     "externalResultsUrl": null
+    },
+    "entryDivisions": {
+     "gender": 2804702,
+     "overall": 2804693,
+     "primary": 2804704,
+     "other": []
+    },
+    "divisions": [
+     {
+      "id": 2804693,
+      "name": "Overall",
+      "rankType": "chip",
+      "count": 409
+     },
+     {
+      "id": 2804702,
+      "name": "Male",
+      "rankType": "chip",
+      "count": 250
+     },
+     {
+      "id": 2804704,
+      "name": "M25-29",
+      "rankType": "chip",
+      "count": 34
+     }
+    ],
+    "result": {
+     "intervals": [
+      {
+       "distance": {
+        "meters": 320,
+        "metersFromStart": 320.04,
+        "units": "ft"
+       },
+       "full": true,
+       "id": 660830,
+       "name": "Full Course",
+       "mostRecentInterval": false,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "type": "course",
+       "divisions": []
+      },
+      {
+       "chipTimeInMillis": 314690,
+       "distance": {
+        "meters": 61,
+        "metersFromStart": 60.96,
+        "units": "ft"
+       },
+       "full": false,
+       "gunTimeInMillis": 763890,
+       "id": 660831,
+       "name": "20th Floor",
+       "mostRecentInterval": true,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "divisions": [
+        {
+         "id": 2804704,
+         "name": "M25-29",
+         "rank": 29,
+         "rankType": "chip",
+         "totalAthletes": 30,
+         "type": "other"
+        },
+        {
+         "id": 2804702,
+         "name": "Male",
+         "rank": 192,
+         "rankType": "chip",
+         "totalAthletes": 211,
+         "type": "gender"
+        },
+        {
+         "id": 2804693,
+         "name": "Overall",
+         "rank": 309,
+         "rankType": "chip",
+         "totalAthletes": 356,
+         "type": "overall"
+        }
+       ],
+       "startTimeInMillis": 1791331649200,
+       "startGunTimeInMillis": 1791331200000,
+       "type": "course"
+      },
+      {
+       "distance": {
+        "meters": 229,
+        "metersFromStart": 228.6,
+        "units": "ft"
+       },
+       "full": false,
+       "id": 660832,
+       "name": "65th Floor",
+       "mostRecentInterval": false,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "type": "course",
+       "divisions": []
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

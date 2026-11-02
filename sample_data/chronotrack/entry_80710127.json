@@ -1,0 +1,200 @@
+{
+ "url": "https://sites.chronotrack.com/event/93943/results/entry/80710127",
+ "next_data": null,
+ "responses": [
+  {
+   "url": "https://reignite-api.athlinks.com/azp/ctlive/event/93943/entry/80710127/result",
+   "body": {
+    "age": 44,
+    "bib": "373",
+    "isManageableInCtLive": false,
+    "displayName": "Blanca Romero",
+    "entryType": "IND",
+    "gender": "F",
+    "location": {
+     "country": "MX",
+     "locality": "Cdmx"
+    },
+    "private": false,
+    "status": "CONF",
+    "teamType": null,
+    "waveId": 360254,
+    "waveName": "Universal",
+    "team": null,
+    "hasValidEmail": true,
+    "waveStartTime": 1791331200,
+    "race": {
+     "id": 249433,
+     "name": "Run-Up",
+     "plannedStartTime": 1791331200,
+     "plannedEndTime": 1791342000,
+     "actualStartTime": 1791331183.75,
+     "actualEndTime": 1791342000,
+     "externalResultsUrl": null
+    },
+    "entryDivisions": {
+     "gender": 2804694,
+     "overall": 2804693,
+     "primary": 2804698,
+     "other": []
+    },
+    "divisions": [
+     {
+      "id": 2804693,
+      "name": "Overall",
+      "rankType": "chip",
+      "count": 409
+     },
+     {
+      "id": 2804694,
+      "name": "Female",
+      "rankType": "chip",
+      "count": 157
+     },
+     {
+      "id": 2804698,
+      "name": "F40-49",
+      "rankType": "chip",
+      "count": 33
+     }
+    ],
+    "result": {
+     "intervals": [
+      {
+       "chipTimeInMillis": 932160,
+       "distance": {
+        "meters": 320,
+        "metersFromStart": 320.04,
+        "units": "ft"
+       },
+       "full": true,
+       "gunTimeInMillis": 2551830,
+       "id": 660830,
+       "name": "Full Course",
+       "mostRecentInterval": true,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "divisions": [
+        {
+         "id": 2804694,
+         "name": "Female",
+         "rank": 6,
+         "rankType": "chip",
+         "totalAthletes": 143,
+         "type": "gender"
+        },
+        {
+         "id": 2804698,
+         "name": "F40-49",
+         "rank": 2,
+         "rankType": "chip",
+         "totalAthletes": 27,
+         "type": "other"
+        },
+        {
+         "id": 2804693,
+         "name": "Overall",
+         "rank": 26,
+         "rankType": "chip",
+         "totalAthletes": 355,
+         "type": "overall"
+        }
+       ],
+       "startTimeInMillis": 1791332819670,
+       "startGunTimeInMillis": 1791331200000,
+       "type": "course"
+      },
+      {
+       "chipTimeInMillis": 174820,
+       "distance": {
+        "meters": 61,
+        "metersFromStart": 60.96,
+        "units": "ft"
+       },
+       "full": false,
+       "gunTimeInMillis": 1794490,
+       "id": 660831,
+       "name": "20th Floor",
+       "mostRecentInterval": false,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "divisions": [
+        {
+         "id": 2804694,
+         "name": "Female",
+         "rank": 7,
+         "rankType": "chip",
+         "totalAthletes": 143,
+         "type": "gender"
+        },
+        {
+         "id": 2804698,
+         "name": "F40-49",
+         "rank": 3,
+         "rankType": "chip",
+         "totalAthletes": 27,
+         "type": "other"
+        },
+        {
+         "id": 2804693,
+         "name": "Overall",
+         "rank": 35,
+         "rankType": "chip",
+         "totalAthletes": 356,
+         "type": "overall"
+        }
+       ],
+       "startTimeInMillis": 1791332819670,
+       "startGunTimeInMillis": 1791331200000,
+       "type": "course"
+      },
+      {
+       "chipTimeInMillis": 675180,
+       "distance": {
+        "meters": 229,
+        "metersFromStart": 228.6,
+        "units": "ft"
+       },
+       "full": false,
+       "gunTimeInMillis": 2294850,
+       "id": 660832,
+       "name": "65th Floor",
+       "mostRecentInterval": false,
+       "paceUnits": "min/mi",
+       "raceType": "run",
+       "divisions": [
+        {
+         "id": 2804693,
+         "name": "Overall",
+         "rank": 26,
+         "rankType": "chip",
+         "totalAthletes": 355,
+         "type": "overall"
+        },
+        {
+         "id": 2804694,
+         "name": "Female",
+         "rank": 7,
+         "rankType": "chip",
+         "totalAthletes": 143,
+         "type": "gender"
+        },
+        {
+         "id": 2804698,
+         "name": "F40-49",
+         "rank": 3,
+         "rankType": "chip",
+         "totalAthletes": 27,
+         "type": "other"
+        }
+       ],
+       "startTimeInMillis": 1791332819670,
+       "startGunTimeInMillis": 1791331200000,
+       "type": "course"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

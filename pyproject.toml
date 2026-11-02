@@ -21,14 +21,17 @@ classifiers = [
     'Programming Language :: Python :: 3.14',
 ]
 dependencies = [
+    "playwright>=1.64.1",
+    "pycountry>=26.2.16",
     "Scrapy==2.19.0",
-    "textual==2.0.3"
+    "textual==2.0.3",
 ]
 license = "MIT"
 license-files = ["LICENSE"]
 
 [project.scripts]
 athlinks_races_cli = "athlinks.cli:main"
+chronotrack_races_cli = "chronotrack.cli:main"
 
 [project.urls]
 Homepage = "https://kodegeek.com/"
@@ -45,7 +48,7 @@ dev = [
 ]
 
 [tool.uv.build-backend]
-module-name = "athlinks"
+module-name = ["athlinks", "chronotrack"]
 
 # Pylint is quite verbose, keep overrides here
 # pylint --generate-toml-config
