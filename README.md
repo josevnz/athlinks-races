@@ -122,8 +122,8 @@ that you might create on your own.
 #### Installation
 
 ```sh
-git clone https://github.com/josevnz/race-crawler
-cd race-crawler
+git clone https://github.com/josevnz/races-crawler
+cd races-crawler
 uv sync --all-groups
 ```
 
@@ -135,7 +135,7 @@ uv sync --all-groups
 Run a `RaceSpider`, few races with different years:
 
 ```shell
-cd race-crawler
+cd races-crawler
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O $HOME/1018673.json
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O $HOME/1093108.json
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
