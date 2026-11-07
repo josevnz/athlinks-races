@@ -78,14 +78,14 @@ class RaceCrawlerApp(App):
             self.notify(
                 severity="error",
                 message=f"Crawler failed with exit code {returncode}",
-                title="athlinks-races update",
+                title="race-crawler update",
                 timeout=60,
             )
             return
         self.notify(
             severity="information",
             message="Done parsing",
-            title="athlinks-races update",
+            title="race-crawler update",
         )
         cnt = 0
         with open(self.athletes_file, 'r', encoding='utf-8') as f:
@@ -95,7 +95,7 @@ class RaceCrawlerApp(App):
         self.notify(
             severity="information",
             message=f"Number of racers retrieved: {cnt}",
-            title="athlinks-races ",
+            title="race-crawler ",
             timeout=60
         )
 

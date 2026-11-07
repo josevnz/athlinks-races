@@ -1,9 +1,9 @@
-# athlinks-races: web scraper for race results hosted on Athlinks
+# race-crawler: web scraper for race results hosted on Athlinks and ChronoTrack
 
-[![Supported Python Versions](https://img.shields.io/pypi/pyversions/athlinks-races/0.0.5)](https://pypi.org/project/athlinks-races/)
-[![PyPI version](https://badge.fury.io/py/athlinks-races.svg)](https://badge.fury.io/py/athlinks-races)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/race-crawler)](https://pypi.org/project/race-crawler/)
+[![PyPI version](https://badge.fury.io/py/race-crawler.svg)](https://badge.fury.io/py/race-crawler)
 ![OS support](https://img.shields.io/badge/Linux-red)
-[![Downloads](https://static.pepy.tech/badge/athlinks-races)](https://pepy.tech/project/athlinks-races)
+[![Downloads](https://static.pepy.tech/badge/race-crawler)](https://pepy.tech/project/race-crawler)
 
 ![Screenshot of athlinks_races_cli --tui](athlinks_capture_screenshot.png)
 
@@ -21,6 +21,14 @@ By default, the spider returns one race metadata object (`RaceItem`), and one `A
 Each `AthleteItem` consists of some basic athlete info and a list of `RaceSplitItem` containing data from each 
 split they recorded.
 
+`race-crawler` is a race results crawler that supports more than one timing provider:
+
+- **Athlinks** (`athlinks` package, `athlinks_races_cli` command): races hosted on athlinks.com.
+- **ChronoTrack** (`chronotrack` package, `chronotrack_races_cli` command): parses the public results pages
+  hosted on sites.chronotrack.com (race metadata, athletes and their splits).
+
+The project was previously named `athlinks-races` (versions up to 0.0.9 are published on PyPI under that name).
+
 ## How to use this package
 
 ### Using uv
@@ -28,8 +36,17 @@ split they recorded.
 If you have installed [uv](https://docs.astral.sh/uv/), is as simple as this:
 
 ```shell
-uvx --from athlinks-races athlinks_races_cli --tui --race_url https://www.athlinks.com/event/382111/results/Event/1093108/Results
+uvx --from race-crawler athlinks_races_cli --tui --race_url https://www.athlinks.com/event/382111/results/Event/1093108/Results
 ```
+
+ChronoTrack public results work the same way; pass a division results page:
+
+```shell
+uvx --from race-crawler chronotrack_races_cli --tui --race_url 'https://sites.chronotrack.com/event/93943/results?raceId=249433&divisionId=2804693'
+```
+
+Pages are loaded with a headless browser and cached on disk; use `--offline` to parse only cached pages, or
+`--refresh` to load everything again. Run `chronotrack_races_cli --help` for all the options.
 
 ### python scripts
 
@@ -38,16 +55,16 @@ Scrapy can be operated entirely from python scripts.
 
 #### Installation
 
-The package is available on [PyPi](https://pypi.org/project/athlinks-races). In your own [uv](https://docs.astral.sh/uv/) project:
+The package is available on [PyPi](https://pypi.org/project/race-crawler). In your own [uv](https://docs.astral.sh/uv/) project:
 
 ```sh
-uv add athlinks-races
+uv add race-crawler
 ```
 
 Or, inside an existing virtual environment:
 
 ```sh
-uv pip install athlinks-races
+uv pip install race-crawler
 ```
 
 #### Example usage
@@ -115,8 +132,8 @@ that you might create on your own.
 #### Installation
 
 ```sh
-git clone https://github.com/josevnz/athlinks-races
-cd athlinks-races
+git clone https://github.com/josevnz/races-crawler
+cd races-crawler
 uv sync --all-groups
 ```
 
@@ -128,7 +145,7 @@ uv sync --all-groups
 Run a `RaceSpider`, few races with different years:
 
 ```shell
-cd athlinks-races
+cd races-crawler
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/33913/results/Event/1018673 -O $HOME/1018673.json
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1093108 -O $HOME/1093108.json
 uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Event/1062909 -O $HOME/1093108.json
@@ -137,7 +154,7 @@ uv run scrapy crawl race -a url=https://www.athlinks.com/event/382111/results/Ev
 Or the newer `athlinks_races_cli`, with the `--tui` argument:
 
 ```shell
-(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run athlinks_races_cli --tui
+(race-crawler) [josevnz@dmaf5 race-crawler]$ uv run athlinks_races_cli --tui
 2025-01-12 14:56:31 [scrapy.middleware] INFO: Enabled item pipelines:
 []
 2025-01-12 14:56:31 [scrapy.core.engine] INFO: Spider opened
@@ -160,10 +177,10 @@ uv run pytest tests/test_athlinks.py
 Example session:
 
 ```shell
-(athlinks-races) [josevnz@dmaf5 athlinks-races]$ uv run pytest /home/josevnz/athlinks-races/tests/test_athlinks.py
+(race-crawler) [josevnz@dmaf5 race-crawler]$ uv run pytest /home/josevnz/race-crawler/tests/test_athlinks.py
 ============================================================= test session starts =============================================================
 platform linux -- Python 3.11.6, pytest-8.3.3, pluggy-1.5.0
-rootdir: /home/josevnz/athlinks-races
+rootdir: /home/josevnz/race-crawler
 configfile: pyproject.toml
 collected 6 items                                                                                                                             
 

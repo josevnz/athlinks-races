@@ -14,6 +14,7 @@ from chronotrack.items import AthleteItem, RaceItem
 
 LOG = logging.getLogger("chronotrack.crawl")
 MAX_PAGES = 200  # safety net
+PROGRESS_EVERY = 25
 
 
 def results_url(ids: dict[str, Any], page: int) -> str:
@@ -50,12 +51,15 @@ async def collect_entry_ids(fetch: Fetcher, ids: dict[str, Any]) -> tuple[list[i
         if page == 1:
             first = capture
             total = parse.parse_total(payload)
-        new = [i for i in parse.parse_results_page(payload) if i not in known]
+        entries = parse.parse_results_page(payload)
+        new = [i for i in entries if i not in known]
         LOG.info("Results page %d: %d new entries", page, len(new))
         if not new:
             break
         known.update(new)
         seen.extend(new)
+        if len(entries) < parse.PAGE_SIZE:  # a short page is the last one
+            break
     return seen, first, total
 
 
@@ -80,7 +84,18 @@ async def crawl(fetch: Fetcher, race_url: str) -> tuple[list[AthleteItem], RaceI
     metadata = parse.parse_metadata(first.next_data, ids["race_id"])
     race = parse.find_race(first.next_data, ids["race_id"]) or {}
     order = [i["id"] for i in sorted(race.get("intervals") or [], key=lambda i: i.get("displayOrder", 0))]
-    athletes = await asyncio.gather(*(fetch_athlete(fetch, ids, eid, order) for eid in entry_ids))
+    done = 0
+
+    async def fetch_with_progress(entry_id: int) -> AthleteItem | None:
+        nonlocal done
+        athlete = await fetch_athlete(fetch, ids, entry_id, order)
+        done += 1
+        if done % PROGRESS_EVERY == 0 or done == len(entry_ids):
+            LOG.info("Athletes: %d/%d", done, len(entry_ids))
+        return athlete
+
+    LOG.info("Loading %d athlete pages", len(entry_ids))
+    athletes = await asyncio.gather(*(fetch_with_progress(eid) for eid in entry_ids))
     return [a for a in athletes if a is not None], metadata, total
 
 

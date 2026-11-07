@@ -20,7 +20,7 @@ def main():
     """
 
     parser = ArgumentParser(description=__doc__)
-    athletes_location = Path.home() / "athlinks-races.json"
+    athletes_location = Path.home() / "race-crawler-athlinks.json"
     parser.add_argument(
         "--athletes_rpt",
         action="store",
@@ -28,7 +28,7 @@ def main():
         default=athletes_location,
         help=f"Location of the athletes race results. Default={athletes_location}"
     )
-    meta_location = Path.home() / "metadata.json"
+    meta_location = Path.home() / "race-crawler-athlinks-metadata.json"
     parser.add_argument(
         "--metadata_rpt",
         action="store",
@@ -101,7 +101,7 @@ def main():
         ],
     )
     app = RaceCrawlerApp(athletes_file=options.athletes_rpt, crawl_cmd=crawl_cmd)
-    app.title = "athlinks-races"
+    app.title = "race-crawler"
     app.run(inline_no_clear=True)
 
 
